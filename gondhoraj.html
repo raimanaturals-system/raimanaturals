@@ -73,6 +73,12 @@ background:radial-gradient(120% 100% at 88% 0%,rgba(181,200,74,.22),transparent 
 .hero-strip div{min-width:8rem}
 .hero-strip dt{font-family:var(--sans);font-size:.6rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,241,230,.55);margin-bottom:.3rem}
 .hero-strip dd{font-family:var(--sans);font-size:.82rem;letter-spacing:.02em;color:var(--cream)}
+.plate-wrap{padding:clamp(2rem,4.5vw,3.2rem) 0 0}
+.plate{border:1px solid var(--ink);border-radius:.45rem;overflow:hidden;background:var(--cream)}
+.plate img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}
+.plate figcaption{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 1.2rem;padding:.9rem 1.3rem;border-top:1px solid var(--hairline)}
+.plate .fig{font-family:var(--sans);font-size:.62rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--copper);white-space:nowrap}
+.plate .desc{font-family:var(--serif);font-style:italic;font-weight:300;font-size:.95rem;color:var(--ink-soft)}
 .glance{display:grid;grid-template-columns:1.45fr .9fr;gap:clamp(2rem,5vw,4rem);align-items:start}
 @media (max-width:860px){.glance{grid-template-columns:1fr}}
 .prose{max-width:40em}
@@ -190,6 +196,14 @@ footer{background:var(--forest-deep);color:var(--cream);padding:clamp(3.5rem,7vw
     </dl>
   </div>
 </header>
+
+<!-- SPECIMEN PLATE -->
+<div class="container plate-wrap">
+  <figure class="plate rv">
+    <img src="gondhoraj-fruit.jpg" alt="A harvested pile of small, glossy, intensely aromatic gondhoraj limes" loading="lazy">
+    <figcaption><span class="fig">Plate I</span><span class="desc">Freshly harvested gondhoraj — small, glossy-skinned, prized for its fragrant rind.</span></figcaption>
+  </figure>
+</div>
 
 <!-- AT A GLANCE -->
 <section class="section">
@@ -379,6 +393,7 @@ footer{background:var(--forest-deep);color:var(--cream);padding:clamp(3.5rem,7vw
         <ul>
           <li><a href="agarwood.html">Agarwood — Aquilaria</a></li>
           <li><a href="gondhoraj.html">Gondhoraj lime</a></li>
+          <li><a href="satkora.html">Satkora</a></li>
         </ul>
       </div>
       <div class="foot-col">
