@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sugandhmantri — Homalomena aromatica | Botanical Library — Raima Naturals</title>
+<meta name="description" content="A scientific and olfactive monograph on sugandhmantri (Homalomena aromatica, Araceae): the linalool-rich rhizome oil of the Northeast Indian forest floor — GC-MS chemistry, contested oil recovery, cultivation, and conservation status.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%231C3327'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23B5C84A' stroke-width='1.2'/%3E%3Cpath d='M16 7v18M7 16h18M9.6 9.6l12.8 12.8M22.4 9.6L9.6 22.4' stroke='%23B5C84A' stroke-width='.8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#1C3327;--forest-deep:#12241B;--cream:#F5F1E6;--cream-2:#EDE7D6;
+  --ink:#20261F;--ink-soft:#4A5347;--chartreuse:#B5C84A;--copper:#9C5B33;
+  --hairline:rgba(32,38,31,.16);--hairline-light:rgba(245,241,230,.22);
+  --serif:"Fraunces",Georgia,serif;--text:"Newsreader",Georgia,serif;--sans:"Archivo",Helvetica,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:var(--text);font-size:1.075rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+::selection{background:var(--chartreuse);color:var(--forest-deep)}
+img{max-width:100%;display:block}
+a{color:inherit}
+body::after{content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.05;mix-blend-mode:multiply;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E")}
+.container{max-width:1120px;margin:0 auto;padding:0 clamp(1.4rem,4.5vw,2.6rem)}
+.section{padding:clamp(3.5rem,7vw,6rem) 0}
+.kicker{font-family:var(--sans);font-size:.7rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase}
+.sec-label{display:flex;align-items:center;gap:1rem;margin-bottom:clamp(1.6rem,4vw,2.4rem)}
+.sec-label .num{font-family:var(--serif);font-style:italic;font-weight:300;font-size:1.4rem;color:var(--copper)}
+.sec-label .rule{flex:0 0 3.2rem;height:1px;background:currentColor;opacity:.35}
+.sec-label .name{font-family:var(--sans);font-size:.68rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase}
+h1,h2,h3{font-family:var(--serif);font-weight:340;line-height:1.1;letter-spacing:-.01em}
+.lede{font-size:clamp(1.1rem,1.6vw,1.25rem);color:var(--ink-soft);max-width:36em}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.6,.2,1),transform .8s cubic-bezier(.2,.6,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .35s,color .35s,box-shadow .35s;color:var(--cream)}
+nav .bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.1rem clamp(1.4rem,4.5vw,2.6rem);max-width:1400px;margin:0 auto}
+nav.solid{background:var(--cream);color:var(--ink);box-shadow:0 1px 0 var(--hairline)}
+.wordmark{display:flex;align-items:center;gap:.65rem;text-decoration:none}
+.wordmark svg{width:26px;height:26px;flex:none}
+.wordmark .wm-text{font-family:var(--sans);font-weight:600;font-size:.82rem;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap}
+.wordmark .wm-sub{display:block;font-weight:400;font-size:.56rem;letter-spacing:.3em;opacity:.75;margin-top:.15rem}
+.nav-links{display:flex;align-items:center;gap:1.7rem;list-style:none}
+.nav-links a{font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;opacity:.85;transition:opacity .2s}
+.nav-links a:hover,.nav-links a.active{opacity:1}
+.nav-links a.active{color:var(--chartreuse)}
+nav.solid .nav-links a.active{color:var(--copper)}
+.nav-cta{font-family:var(--sans);font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border:1px solid currentColor;padding:.6rem 1.1rem;border-radius:2rem;transition:background .25s,color .25s;white-space:nowrap}
+nav:not(.solid) .nav-cta:hover{background:var(--cream);color:var(--forest)}
+nav.solid .nav-cta:hover{background:var(--forest);color:var(--cream);border-color:var(--forest)}
+.burger{display:none;background:none;border:none;color:inherit;cursor:pointer;padding:.4rem}
+.burger svg{width:26px;height:26px;display:block}
+.mobile-menu{display:none;position:fixed;inset:0;z-index:99;background:var(--forest-deep);color:var(--cream);padding:7rem 2rem 2rem;flex-direction:column;gap:1.4rem}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-family:var(--serif);font-size:1.6rem;text-decoration:none;border-bottom:1px solid var(--hairline-light);padding-bottom:1rem}
+.nav-links a{white-space:nowrap}
+nav.menu-open{background:transparent;box-shadow:none;color:var(--cream)}
+body.menu-open{overflow:hidden}
+.burger .ico-x{display:none}
+.burger.open .ico-bars{display:none}
+.burger.open .ico-x{display:block}
+.mobile-menu{overflow-y:auto;overscroll-behavior:contain}
+.mobile-menu a.active{color:var(--chartreuse)}
+.mobile-menu .mm-cta{align-self:flex-start;margin-top:.4rem;border-bottom:none;padding:.95rem 1.7rem;
+background:var(--cream);color:var(--forest-deep);border-radius:2rem;
+font-family:var(--sans);font-size:.76rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+@media (max-width:1080px){
+  .nav-links{gap:1.15rem}
+  .nav-links a{font-size:.68rem;letter-spacing:.1em}
+  .nav-cta{padding:.55rem .95rem;font-size:.66rem;letter-spacing:.1em}
+}
+@media (max-width:1000px){.nav-links,.nav-cta{display:none}.burger{display:block}}
+.page-hero{position:relative;background:var(--forest-deep);color:var(--cream);padding:clamp(7.5rem,15vw,10rem) 0 clamp(3rem,6vw,4.5rem);overflow:hidden}
+.page-hero::before{content:"";position:absolute;inset:0;opacity:.55;pointer-events:none;
+background:radial-gradient(120% 100% at 88% 0%,rgba(181,200,74,.2),transparent 55%),radial-gradient(90% 90% at 0% 100%,rgba(156,91,51,.2),transparent 60%)}
+.page-hero .inner{position:relative;max-width:1120px;margin:0 auto;padding:0 clamp(1.4rem,4.5vw,2.6rem)}
+.crumbs{margin-bottom:1.5rem;font-family:var(--sans);font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,241,230,.6)}
+.crumbs a{text-decoration:none;color:rgba(245,241,230,.8)}
+.crumbs a:hover{color:var(--chartreuse)}
+.crumbs span{padding:0 .45rem;color:rgba(245,241,230,.4)}
+.page-hero .kicker{color:var(--chartreuse);margin-bottom:1.1rem;display:block}
+.page-hero h1{font-size:clamp(2.6rem,6.4vw,4.6rem)}
+.page-hero .sub{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.1rem,2vw,1.5rem);color:rgba(245,241,230,.82);margin-top:.6rem}
+.page-hero .intro{margin-top:1.5rem;font-size:clamp(1.05rem,1.6vw,1.25rem);max-width:38em;color:rgba(245,241,230,.9)}
+.hero-strip{margin-top:clamp(2rem,4vw,2.8rem);border-top:1px solid var(--hairline-light);padding-top:1.3rem;display:flex;flex-wrap:wrap;gap:1.4rem 2.4rem}
+.hero-strip div{min-width:8rem}
+.hero-strip dt{font-family:var(--sans);font-size:.6rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,241,230,.55);margin-bottom:.3rem}
+.hero-strip dd{font-family:var(--sans);font-size:.82rem;letter-spacing:.02em;color:var(--cream)}
+.plate-wrap{padding:clamp(2rem,4.5vw,3.2rem) 0 0}
+.plate{border:1px solid var(--ink);border-radius:.45rem;overflow:hidden;background:var(--cream)}
+.plate img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}
+.plate figcaption{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 1.2rem;padding:.9rem 1.3rem;border-top:1px solid var(--hairline)}
+.plate .fig{font-family:var(--sans);font-size:.62rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--copper);white-space:nowrap}
+.plate .desc{font-family:var(--serif);font-style:italic;font-weight:300;font-size:.95rem;color:var(--ink-soft)}
+.glance{display:grid;grid-template-columns:1.45fr .9fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+@media (max-width:860px){.glance{grid-template-columns:1fr}}
+.prose{max-width:40em}
+.prose p+p{margin-top:1.1rem}
+.prose .first::first-letter{font-family:var(--serif);font-size:3.1em;float:left;line-height:.82;padding:.05em .12em 0 0;color:var(--copper)}
+.spec{border:1px solid var(--ink);border-radius:.45rem;padding:1.5rem;background:var(--cream);position:sticky;top:6rem}
+.spec h4{font-family:var(--sans);font-size:.64rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--forest)}
+.spec dl{display:grid;gap:0;margin-top:1rem}
+.spec dl>div{display:flex;justify-content:space-between;gap:1.2rem;border-top:1px solid var(--hairline);padding:.7rem 0;font-family:var(--sans);font-size:.72rem;letter-spacing:.02em}
+.spec dt{color:var(--ink-soft);text-transform:uppercase;letter-spacing:.1em;font-size:.62rem;font-weight:600;padding-top:.15rem;flex:0 0 40%}
+.spec dd{font-weight:500;text-align:right;color:var(--ink)}
+.spec dd em{font-style:italic;color:var(--copper);font-family:var(--serif)}
+@media (max-width:860px){.spec{position:static}}
+.facets{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.6rem}
+.facet{border:1px solid var(--hairline);padding:1.2rem 1.1rem;border-radius:.35rem;background:var(--cream)}
+.facet h4{font-family:var(--sans);font-size:.62rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--copper);margin-bottom:.5rem}
+.facet p{font-size:.9rem;color:var(--ink-soft);font-style:italic}
+@media (max-width:720px){.facets{grid-template-columns:1fr 1fr}}
+.block{border-top:1px solid var(--hairline);padding-top:clamp(2rem,4vw,3rem);margin-top:clamp(2.6rem,5vw,4rem)}
+.block h2{font-size:clamp(1.6rem,3.4vw,2.3rem);max-width:18em}
+.block .body{margin-top:1.3rem;max-width:44em}
+.block .body p+p{margin-top:1.1rem}
+.science{margin-top:1.5rem;border:1px solid var(--hairline);border-radius:.5rem;background:var(--cream);overflow:hidden}
+.science+.science{margin-top:.9rem}
+.science>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.1rem 1.3rem;font-family:var(--sans);font-size:.73rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--forest);transition:background .2s}
+.science>summary:hover{background:var(--cream-2)}
+.science>summary::-webkit-details-marker{display:none}
+.science>summary .pm{position:relative;width:14px;height:14px;flex:none}
+.science>summary .pm::before,.science>summary .pm::after{content:"";position:absolute;background:var(--copper);transition:transform .25s}
+.science>summary .pm::before{top:6px;left:0;width:14px;height:2px}
+.science>summary .pm::after{top:0;left:6px;width:2px;height:14px}
+.science[open]>summary .pm::after{transform:scaleY(0)}
+.science[open]>summary{border-bottom:1px solid var(--hairline);background:var(--cream-2)}
+.science .panel{padding:1.1rem 1.3rem 1.5rem;overflow-x:auto}
+.gc-table{width:100%;border-collapse:collapse;font-size:.9rem;min-width:34rem}
+.gc-table th{font-family:var(--sans);font-size:.58rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);text-align:left;padding:.55rem .7rem;border-bottom:1.5px solid var(--ink)}
+.gc-table td{padding:.6rem .7rem;border-bottom:1px solid var(--hairline);vertical-align:top;color:var(--ink)}
+.gc-table tr:last-child td{border-bottom:none}
+.gc-table .cmp{font-weight:600}
+.gc-table .cls{font-family:var(--sans);font-size:.7rem;letter-spacing:.03em;color:var(--ink-soft);white-space:nowrap}
+.gc-table .pct{font-family:var(--sans);font-weight:600;color:var(--copper);white-space:nowrap;text-align:right}
+.gc-note{margin-top:.9rem;font-size:.82rem;font-style:italic;color:var(--ink-soft);max-width:44em}
+.callout{margin-top:1.5rem;border-left:3px solid var(--chartreuse);background:var(--cream-2);padding:1.2rem 1.4rem;border-radius:0 .4rem .4rem 0;max-width:44em}
+.callout h4{font-family:var(--sans);font-size:.64rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--forest);margin-bottom:.5rem}
+.callout p{font-size:.95rem;color:var(--ink-soft)}
+.callout p+p{margin-top:.7rem}
+.refs{margin-top:1.2rem;max-width:46em;display:grid;gap:.65rem;list-style:none;counter-reset:r}
+.refs li{position:relative;padding-left:1.8rem;font-size:.84rem;color:var(--ink-soft);line-height:1.5}
+.refs li::before{counter-increment:r;content:counter(r);position:absolute;left:0;top:0;font-family:var(--sans);font-size:.62rem;font-weight:600;color:var(--copper);border:1px solid var(--hairline);border-radius:50%;width:1.2rem;height:1.2rem;display:flex;align-items:center;justify-content:center}
+.refs a{color:var(--copper);text-decoration:none;border-bottom:1px solid var(--hairline)}
+.refs a:hover{color:var(--forest)}
+.btn{font-family:var(--sans);font-size:.74rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;padding:.9rem 1.6rem;border-radius:2rem;transition:transform .2s,background .25s,color .25s;display:inline-block}
+.btn:active{transform:scale(.97)}
+.btn-dark{background:var(--forest);color:var(--cream)}
+.btn-dark:hover{background:var(--copper)}
+.mono-cta{margin-top:clamp(2.6rem,5vw,4rem);border-top:1px solid var(--hairline);padding-top:2.2rem;display:flex;flex-wrap:wrap;gap:1.2rem 2rem;align-items:center;justify-content:space-between}
+.mono-cta .back{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--forest);display:inline-flex;align-items:center;gap:.5rem}
+.mono-cta .back:hover{color:var(--copper)}
+footer{background:var(--forest-deep);color:var(--cream);padding:clamp(3.5rem,7vw,5rem) 0 2.2rem}
+.foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2.2rem;padding-bottom:2.6rem;border-bottom:1px solid var(--hairline-light)}
+.foot-brand p{margin-top:1rem;font-size:.98rem;color:rgba(245,241,230,.8);max-width:24em}
+.foot-brand .sig{font-style:italic;color:var(--chartreuse);margin-top:.5rem}
+.foot-col h5{font-family:var(--sans);font-size:.66rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:rgba(245,241,230,.6);margin-bottom:1rem}
+.foot-col ul{list-style:none;display:grid;gap:.6rem}
+.foot-col a{text-decoration:none;font-size:.95rem;color:rgba(245,241,230,.88)}
+.foot-col a:hover{color:var(--chartreuse)}
+.foot-base{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;padding-top:1.6rem;font-family:var(--sans);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,241,230,.55)}
+
+/* ---------- footer layout with legal column ---------- */
+.foot-brand{flex:1 1 20rem;min-width:16rem}
+.foot-col{flex:0 1 auto;min-width:9rem}
+.foot-base{flex-direction:column;align-items:flex-start;gap:.55rem;text-transform:none;letter-spacing:.09em;font-size:.66rem;line-height:1.6}
+.foot-base .legalname{color:rgba(245,241,230,.72)}
+.foot-base .row{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;width:100%;text-transform:uppercase;letter-spacing:.16em;font-size:.64rem}
+
+
+</style>
+</head>
+<body>
+<!-- NAV -->
+<nav id="nav">
+  <div class="bar">
+    <a class="wordmark" href="index.html" aria-label="Raima Naturals — home">
+      <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="1.1"/><circle cx="16" cy="16" r="9.5" stroke="currentColor" stroke-width=".9"/><path d="M16 6.5v19M6.5 16h19M9.3 9.3l13.4 13.4M22.7 9.3L9.3 22.7" stroke="currentColor" stroke-width=".55"/></svg>
+      <span class="wm-text">Raima Naturals<span class="wm-sub">East Himalaya</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="botanical-library.html" class="active">Botanical Library</a></li>
+      <li><a href="index.html#terroir">Terroir</a></li>
+      <li><a href="index.html#craft">Craft</a></li>
+      <li><a href="index.html#founding">Founding Years</a></li>
+    </ul>
+    <a class="nav-cta" href="contact.html">Request samples</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <svg class="ico-bars" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+      <svg class="ico-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mmenu">
+  <a class="active" href="botanical-library.html">Botanical Library</a>
+  <a href="index.html#terroir">Terroir</a>
+  <a href="index.html#craft">Craft</a>
+  <a href="index.html#founding">Founding Years</a>
+  <a class="mm-cta" href="contact.html">Request samples</a>
+</div>
+
+<!-- HERO -->
+<header class="page-hero">
+  <div class="inner">
+    <div class="crumbs rv"><a href="index.html">Raima Naturals</a><span>/</span><a href="botanical-library.html">Botanical Library</a><span>/</span>Sugandhmantri</div>
+    <span class="kicker rv">Entry iv · Aromatic &amp; medicinal</span>
+    <h1 class="rv">Sugandhmantri</h1>
+    <div class="sub rv"><em>Homalomena aromatica</em> — the scented rhizome of the forest floor</div>
+    <p class="intro rv">A shade-dwelling aroid of the Northeast Indian understory, distilled from its rhizome rather than any flower, leaf or fruit. Hundreds of tonnes leave the region every year as dried root — and almost none of it is distilled anywhere near where it grows.</p>
+    <dl class="hero-strip rv">
+      <div><dt>Genus</dt><dd>Homalomena · Araceae</dd></div>
+      <div><dt>Native belt</dt><dd>NE India · Indochina</dd></div>
+      <div><dt>Part used</dt><dd>Dried rhizome</dd></div>
+      <div><dt>Olfactive</dt><dd>Fresh-woody · earthy · spicy</dd></div>
+      <div><dt>Status</dt><dd>Cultivated · in development</dd></div>
+    </dl>
+  </div>
+</header>
+
+<!-- SPECIMEN PLATE -->
+<div class="container plate-wrap">
+  <figure class="plate rv">
+    <img src="sugandhmantri.jpg" alt="Sugandhmantri (Homalomena aromatica) — broad-leaved understory aroid grown for its aromatic rhizome" loading="lazy">
+    <figcaption><span class="fig">Plate I</span><span class="desc">Sugandhmantri — a shade aroid whose value lies entirely underground.</span></figcaption>
+  </figure>
+</div>
+
+<!-- AT A GLANCE -->
+<section class="section">
+  <div class="container">
+    <div class="sec-label rv"><span class="num">01</span><span class="rule"></span><span class="name">At a glance</span></div>
+    <div class="glance">
+      <div class="prose rv">
+        <p class="first">Sugandhmantri — <em>gandhaki</em> in Tripura, and sold into the Western trade under the curious name “Gandhi Root” — is a broad-leaved, stemless aroid of the family Araceae, a relative of the arums and philodendrons rather than of any conventional aromatic crop. It grows low on the shaded forest floor across Northeast India and on into Indochina, and it is one of the few aromatics in this library where nothing above ground is harvested at all.</p>
+        <p>The oil lives in the rhizome — the thick, creeping underground stem. Dug in winter, dried, and distilled, it gives a fresh-woody, earthy oil built around <strong>linalool</strong>, the same molecule that carries lavender and rosewood, here wrapped in something spicier and considerably darker.</p>
+        <p>What makes it interesting to a house in Tripura is not novelty — the material has been traded for decades. It is geography. Several hundred tonnes of dried rhizome are reported to leave the Northeast each year, travelling roughly two thousand kilometres to be distilled in the perfume towns of Kannauj and Kanpur. Not one commercial still for this botanical has been documented anywhere in the region that grows it.</p>
+      </div>
+      <aside class="spec rv">
+        <h4>Botanical fact-file</h4>
+        <dl>
+          <div><dt>Common names</dt><dd>Sugandhmantri, gandhaki, Gandhi Root</dd></div>
+          <div><dt>Family</dt><dd>Araceae</dd></div>
+          <div><dt>Species</dt><dd><em>Homalomena aromatica</em> (Schott)</dd></div>
+          <div><dt>Habit</dt><dd>Stemless shade herb, rhizomatous</dd></div>
+          <div><dt>Part used</dt><dd>Rhizome (dried)</dd></div>
+          <div><dt>Extraction</dt><dd>Hydro / steam distillation</dd></div>
+          <div><dt>Lead compound</dt><dd>Linalool, 43–62%</dd></div>
+          <div><dt>Olfactive family</dt><dd>Fresh-woody / earthy</dd></div>
+          <div><dt>Native belt</dt><dd>NE India, Indochina, Indonesia</dd></div>
+          <div><dt>CITES / IUCN</dt><dd>Not listed / not evaluated</dd></div>
+          <div><dt>Raima status</dt><dd><em>In development</em></dd></div>
+        </dl>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- OLFACTIVE -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="block" style="margin-top:0;border-top:none;padding-top:0">
+      <div class="sec-label rv"><span class="num">02</span><span class="rule"></span><span class="name">Olfactive profile</span></div>
+      <h2 class="rv">Linalool, but grown in the dark.</h2>
+      <div class="body rv">
+        <p>The first impression is unmistakably linalool — fresh, floral-woody, faintly citric, the familiar lift that lavender and rosewood share. The technical references describe it as a refreshing, pleasant, spicy reading of that note. What arrives underneath it is the part worth paying attention to: an earthy, resinous, root-cellar depth with a warm, almost smoky-caramel edge, contributed by terpinen-4-ol and a scattering of heavier sesquiterpenes.</p>
+        <p>That combination is the whole argument for the material. As a source of linalool alone it has no case to make — that molecule is available far more cheaply and far more purely elsewhere. As a <em>complete</em> natural that pairs a bright top with genuine earth underneath, it does something a purified single compound structurally cannot. In aromatherapy circles it is described as grounding and meditative; in perfumery terms it is a fresh-woody base with an unusual amount of soil in it.</p>
+      </div>
+      <div class="facets">
+        <div class="facet rv"><h4>Fresh</h4><p>linalool, floral-woody lift</p></div>
+        <div class="facet rv"><h4>Earth</h4><p>root, soil, resinous depth</p></div>
+        <div class="facet rv"><h4>Spice</h4><p>warm, dry, faintly peppery</p></div>
+        <div class="facet rv"><h4>Trail</h4><p>smoky-caramel drydown</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCIENCE -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="block" style="margin-top:0">
+      <div class="sec-label rv"><span class="num">03</span><span class="rule"></span><span class="name">The GC-MS lens</span></div>
+      <h2 class="rv">A well-analysed oil with one badly unsettled number.</h2>
+      <div class="body rv">
+        <p>The composition of sugandhmantri oil is genuinely well documented — three independent GC-MS analyses agree on its shape, if not its proportions. What is <em>not</em> settled, and what matters enormously to anyone thinking about distilling it, is how much oil a given weight of dried rhizome actually surrenders. Published figures differ by more than a factor of two, and the gap is wide enough to change the answer to every question that follows.</p>
+      </div>
+
+      <details class="science rv">
+        <summary>Composition — three independent analyses <span class="pm"></span></summary>
+        <div class="panel">
+          <table class="gc-table">
+            <thead><tr><th>Compound</th><th>Class</th><th class="pct">Reported</th></tr></thead>
+            <tbody>
+              <tr><td class="cmp">Linalool</td><td class="cls">Monoterpene alcohol</td><td class="pct">43–62%</td></tr>
+              <tr><td class="cmp">Terpinen-4-ol</td><td class="cls">Monoterpene alcohol</td><td class="pct">8–17%</td></tr>
+              <tr><td class="cmp">α-Cadinol</td><td class="cls">Sesquiterpene alcohol</td><td class="pct">trace–minor</td></tr>
+              <tr><td class="cmp">Spathulenol</td><td class="cls">Sesquiterpene alcohol</td><td class="pct">trace–minor</td></tr>
+              <tr><td class="cmp">Cryptone</td><td class="cls">Monoterpene ketone</td><td class="pct">trace–minor</td></tr>
+            </tbody>
+          </table>
+          <p class="gc-note">Linalool figures span three separate analyses — 43.1%, 58.3% and 62.1% [1][3]. The ~19-point spread across nominally the same material is itself a finding: batch-to-batch variability in this oil is real and, at present, entirely unmanaged. The minor sesquiterpene fraction is small by weight but carries much of the earthy character described above.</p>
+        </div>
+      </details>
+
+      <details class="science rv">
+        <summary>Oil recovery — the contested number <span class="pm"></span></summary>
+        <div class="panel">
+          <table class="gc-table">
+            <thead><tr><th>Source</th><th>Basis</th><th class="pct">Recovery</th></tr></thead>
+            <tbody>
+              <tr><td class="cmp">Distiller's published specification</td><td class="cls">Dry rhizome</td><td class="pct">0.8–1.5%</td></tr>
+              <tr><td class="cmp">Peer-reviewed composition study</td><td class="cls">Dry rhizome</td><td class="pct">0.66%</td></tr>
+              <tr><td class="cmp">Government-style project model</td><td class="cls">Unstated basis</td><td class="pct">rejected</td></tr>
+            </tbody>
+          </table>
+          <p class="gc-note">A supplier specification and a peer-reviewed study disagree by more than twofold [2][3]. A widely circulated cultivation model implies a recovery several times higher than either; its stated oil constituents do not match any published GC-MS of the species, and we discard it entirely rather than repeat it. Until this is measured on real feedstock it stays an open question, not a specification.</p>
+        </div>
+      </details>
+
+      <div class="callout rv">
+        <h4>How we handle these numbers</h4>
+        <p>Published recovery figures for this species disagree by more than twofold, which is exactly why we measure our own rather than quote someone else's. The literature maps the chemistry; it does not set our specification.</p>
+        <p>Every lot we release is distilled from authenticated rhizome and characterised by GC-MS, and the chromatogram travels with it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOTANY -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="block" style="margin-top:0">
+      <div class="sec-label rv"><span class="num">04</span><span class="rule"></span><span class="name">Botany &amp; identity</span></div>
+      <h2 class="rv">An aroid, not an aromatic crop in the usual sense.</h2>
+      <div class="body rv">
+        <p><em>Homalomena aromatica</em> sits in Araceae — the arum family, alongside taro, philodendron and the anthuriums — which places it a long way from the citrus, grasses and resinous trees that supply most of the world's essential oils. It is stemless and low-growing, with broad heart-shaped leaves rising directly from a creeping underground rhizome, and it wants deep shade, heavy rain and acidic soil. Its aromatic wealth is stored entirely below ground.</p>
+        <p>A note on naming, because the trade is careless with it. “Gandhi Root” is a Western trade name for this species, not a separate botanical. More consequentially, <em>Sugandha Bala</em> — a completely different plant, <em>Pavonia odorata</em> — is regularly confused with it in Indian commerce, and the two are sold at very different prices under near-identical names. Any material offered without a species confirmation and a chromatogram should be treated as unidentified.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CULTIVATION -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="block" style="margin-top:0">
+      <div class="sec-label rv"><span class="num">05</span><span class="rule"></span><span class="name">Cultivation</span></div>
+      <h2 class="rv">Two years underground, and no settled method.</h2>
+      <div class="body rv">
+        <p>The agronomy is consistent across sources and unusually well suited to a particular kind of land. Sugandhmantri wants 40–60% shade, 2,000–3,000 mm of annual rainfall and an acidic soil around pH 4.6–5.5 — which describes the shaded understory of a maturing plantation rather than open field. Shade is not merely tolerated but rewarded: trials report appreciably heavier rhizomes under canopy than in the open. It is propagated only from rhizome cuttings bearing active buds, as seed propagation fails, planted through the pre-monsoon months and lifted in the dry winter window between December and February, after a minimum of two years in the ground.</p>
+        <p>That is where the confidence ends. Despite decades of trade in the raw material, no standardised package of practices exists, and a state agricultural university stated plainly in 2024 that commercial cultivation has not been taken up for want of reliable propagation methods. A named cultivar exists — Jor Lab SM-2, released by CSIR-NEIST — but its yield data is not publicly available. There is also a documented disease risk that the promotional literature tends to omit: collar rot caused by <em>Sclerotium delphinii</em> has been recorded in this crop in West Tripura, which is unsurprising for a shade aroid grown in high rainfall, and is exactly the kind of thing a first planting needs to be designed against.</p>
+      </div>
+      <div class="callout rv">
+        <h4>Why the understory matters</h4>
+        <p>A crop that positively prefers 40–60% shade is not competing for open ground. It occupies the layer beneath a canopy that would otherwise produce nothing at all — which makes it a natural companion to a tree planting rather than an alternative to one.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TERROIR & CONSERVATION -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="block" style="margin-top:0">
+      <div class="sec-label rv"><span class="num">06</span><span class="rule"></span><span class="name">Terroir, conservation &amp; sourcing</span></div>
+      <h2 class="rv">A regional crop that leaves the region undistilled.</h2>
+      <div class="body rv">
+        <p>Sugandhmantri grows across the Northeast, with the documented trade concentrated in the Barak Valley and the surrounding hill country — the same ecological belt that runs through Tripura and into Sylhet. Tripura's own Non-Timber Forest Produce policy names <em>gandhaki</em> among its priority species and states explicitly that raw material should not simply be shipped out unprocessed. On the ground, that is precisely what happens: dried rhizome travels to distillers two thousand kilometres away, and the value added by distillation is added somewhere else entirely.</p>
+        <p>The conservation position is unambiguous even without a formal listing. The species carries no CITES listing and has never been assessed by the IUCN, yet twelve years of published work says the same thing — wild collection is outrunning regeneration, and one field survey in Arunachal Pradesh found the plant at only nine of fifteen sites it searched, describing the populations as poor. For us that settles the method: our sugandhmantri comes from cultivated rhizome, propagated deliberately. Buying wild-dug root would contradict the only version of this story worth telling.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REFERENCES -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="block" style="margin-top:0">
+      <div class="sec-label rv"><span class="num">✦</span><span class="rule"></span><span class="name">Sources</span></div>
+      <ul class="refs rv">
+        <li>Kobashi — <em>Ghandi Root / Sugandh Mantri (Homalomena aromatica)</em>, published GC analysis. <a href="https://www.kobashi.co.uk/essentialoils/Ghandi_Root_Sugandh_Mantri_Homalomena_aromatica.html">kobashi.co.uk</a></li>
+        <li>Kanha Nature Oils — Sugandh Mantri oil, distiller's recovery specification. <a href="https://aromatherapyoil.in/our-products/sugandh-mantri-oil/">aromatherapyoil.in</a></li>
+        <li>Singh et al. (2000) — composition of <em>Homalomena aromatica</em> rhizome oil. <a href="https://scent.vn/en/pages/oil/homalomena-aromatica-rhizome-india-4020">scent.vn</a></li>
+        <li>The Good Scents Company — <em>Homalomena aromatica</em> odour description and technical record. <a href="https://www.thegoodscentscompany.com/data/es1678771.html">thegoodscentscompany.com</a></li>
+        <li><em>Macro-propagation of Homalomena aromatica</em>, Assam Agricultural University (2023). <a href="https://environmentandecology.com/wp-content/uploads/2024/04/MS25-Macro-Propagation-of-Homalomena-aromatica.pdf">environmentandecology.com</a></li>
+        <li><em>Sugandhmantri (Homalomena aromatica Schott): a potential aromatic and medicinal plant of North East India</em>. <a href="https://www.academia.edu/32918469/Sugandhmantri_Homalomena_aromatica_Schott_a_potential_aromatic_and_medicinal_plant_of_North_East_India">academia.edu</a></li>
+        <li>Jor Lab SM-2 cultivar, CSIR-NEIST Jorhat — <em>J. Essential Oil Bearing Plants</em> 24(5), 2021. <a href="https://www.tandfonline.com/doi/abs/10.1080/0972060X.2021.1995510">tandfonline.com</a></li>
+        <li>Collar rot (<em>Sclerotium delphinii</em>) recorded in sugandhmantri, West Tripura (2023). <a href="https://www.sciencedirect.com/science/article/abs/pii/S0261219423000303">sciencedirect.com</a></li>
+        <li>Tripura Non-Timber Forest Produce Policy 2020 — gandhaki among priority species. <a href="https://risingnortheast.in/wp-content/uploads/2025/04/NTFP-Policy-1.pdf">risingnortheast.in</a></li>
+        <li>Population status survey, Arunachal Pradesh — <em>Plant Science Today</em>. <a href="https://horizonepublishing.com/journals/index.php/PST/article/view/435">horizonepublishing.com</a></li>
+      </ul>
+      <div class="mono-cta rv">
+        <a class="back" href="botanical-library.html">← Back to the Botanical Library</a>
+        <a class="btn btn-dark" href="contact.html?re=Sugandhmantri">Request fragrance samples</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="wordmark" href="index.html" style="text-decoration:none">
+          <svg viewBox="0 0 32 32" fill="none" aria-hidden="true" width="26" height="26"><circle cx="16" cy="16" r="15" stroke="#B5C84A" stroke-width="1.1"/><circle cx="16" cy="16" r="9.5" stroke="#B5C84A" stroke-width=".9"/><path d="M16 6.5v19M6.5 16h19M9.3 9.3l13.4 13.4M22.7 9.3L9.3 22.7" stroke="#B5C84A" stroke-width=".55"/></svg>
+          <span class="wm-text">Raima Naturals<span class="wm-sub">East Himalaya</span></span>
+        </a>
+        <p>A specialty aroma house of the East Himalaya.<br>Founding stage · Tripura, India.</p>
+        <p class="sig">Provenance, distilled.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="botanical-library.html">Botanical Library</a></li>
+          <li><a href="index.html#terroir">Terroir</a></li>
+          <li><a href="index.html#craft">Craft</a></li>
+          <li><a href="index.html#founding">Founding Years</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="contact.html">Request samples</a></li>
+          <li><a href="mailto:raimanaturals@gmail.com">raimanaturals@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+          <li><a href="shipping-policy.html">Shipping Policy</a></li>
+          <li><a href="return-policy.html">Return Policy</a></li>
+          <li><a href="refund-policy.html">Refund &amp; Cancellation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span class="legalname">Raima Naturals Private Limited — formerly known as Atkalapa Biotechnology LLP.</span>
+      <span class="row"><span>© 2026 Raima Naturals</span><span>Single origin · Small batch · Documented</span></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const nav=document.getElementById('nav');
+const burger=document.getElementById('burger'),mmenu=document.getElementById('mmenu');
+const onScroll=()=>nav.classList.toggle('solid',window.scrollY>48 && !mmenu.classList.contains('open'));
+onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+const setMenu=open=>{
+  mmenu.classList.toggle('open',open);
+  burger.classList.toggle('open',open);
+  nav.classList.toggle('menu-open',open);
+  document.body.classList.toggle('menu-open',open);
+  burger.setAttribute('aria-expanded',open);
+  burger.setAttribute('aria-label',open?'Close menu':'Open menu');
+  if(open){nav.classList.remove('solid');}else{onScroll();}
+};
+burger.addEventListener('click',()=>setMenu(!mmenu.classList.contains('open')));
+mmenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&mmenu.classList.contains('open'))setMenu(false);});
+const mqDesktop=window.matchMedia('(min-width:1001px)');
+mqDesktop.addEventListener('change',e=>{if(e.matches)setMenu(false);});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agarwood — Aquilaria | Botanical Library — Raima Naturals</title>
+<meta name="description" content="A scientific and olfactive monograph on agarwood (Aquilaria spp., Thymelaeaceae): how the resin forms, its GC-MS chemistry — sesquiterpenes and 2-(2-phenylethyl)chromones — aroma, uses, and CITES status.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%231C3327'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23B5C84A' stroke-width='1.2'/%3E%3Cpath d='M16 7v18M7 16h18M9.6 9.6l12.8 12.8M22.4 9.6L9.6 22.4' stroke='%23B5C84A' stroke-width='.8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#1C3327;--forest-deep:#12241B;--cream:#F5F1E6;--cream-2:#EDE7D6;
+  --ink:#20261F;--ink-soft:#4A5347;--chartreuse:#B5C84A;--copper:#9C5B33;
+  --hairline:rgba(32,38,31,.16);--hairline-light:rgba(245,241,230,.22);
+  --serif:"Fraunces",Georgia,serif;--text:"Newsreader",Georgia,serif;--sans:"Archivo",Helvetica,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:var(--text);font-size:1.075rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+::selection{background:var(--chartreuse);color:var(--forest-deep)}
+img{max-width:100%;display:block}
+a{color:inherit}
+body::after{content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.05;mix-blend-mode:multiply;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E")}
+.container{max-width:1120px;margin:0 auto;padding:0 clamp(1.4rem,4.5vw,2.6rem)}
+.section{padding:clamp(3.5rem,7vw,6rem) 0}
+.kicker{font-family:var(--sans);font-size:.7rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase}
+.sec-label{display:flex;align-items:center;gap:1rem;margin-bottom:clamp(1.6rem,4vw,2.4rem)}
+.sec-label .num{font-family:var(--serif);font-style:italic;font-weight:300;font-size:1.4rem;color:var(--copper)}
+.sec-label .rule{flex:0 0 3.2rem;height:1px;background:currentColor;opacity:.35}
+.sec-label .name{font-family:var(--sans);font-size:.68rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase}
+h1,h2,h3{font-family:var(--serif);font-weight:340;line-height:1.1;letter-spacing:-.01em}
+.lede{font-size:clamp(1.1rem,1.6vw,1.25rem);color:var(--ink-soft);max-width:36em}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.6,.2,1),transform .8s cubic-bezier(.2,.6,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}}
+
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .35s,color .35s,box-shadow .35s;color:var(--cream)}
+nav .bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.1rem clamp(1.4rem,4.5vw,2.6rem);max-width:1400px;margin:0 auto}
+nav.solid{background:var(--cream);color:var(--ink);box-shadow:0 1px 0 var(--hairline)}
+.wordmark{display:flex;align-items:center;gap:.65rem;text-decoration:none}
+.wordmark svg{width:26px;height:26px;flex:none}
+.wordmark .wm-text{font-family:var(--sans);font-weight:600;font-size:.82rem;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap}
+.wordmark .wm-sub{display:block;font-weight:400;font-size:.56rem;letter-spacing:.3em;opacity:.75;margin-top:.15rem}
+.nav-links{display:flex;align-items:center;gap:1.7rem;list-style:none}
+.nav-links a{font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;opacity:.85;transition:opacity .2s}
+.nav-links a:hover,.nav-links a.active{opacity:1}
+.nav-links a.active{color:var(--chartreuse)}
+nav.solid .nav-links a.active{color:var(--copper)}
+.nav-cta{font-family:var(--sans);font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border:1px solid currentColor;padding:.6rem 1.1rem;border-radius:2rem;transition:background .25s,color .25s;white-space:nowrap}
+nav:not(.solid) .nav-cta:hover{background:var(--cream);color:var(--forest)}
+nav.solid .nav-cta:hover{background:var(--forest);color:var(--cream);border-color:var(--forest)}
+.burger{display:none;background:none;border:none;color:inherit;cursor:pointer;padding:.4rem}
+.burger svg{width:26px;height:26px;display:block}
+.mobile-menu{display:none;position:fixed;inset:0;z-index:99;background:var(--forest-deep);color:var(--cream);padding:7rem 2rem 2rem;flex-direction:column;gap:1.4rem}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-family:var(--serif);font-size:1.6rem;text-decoration:none;border-bottom:1px solid var(--hairline-light);padding-bottom:1rem}
+.nav-links a{white-space:nowrap}
+nav.menu-open{background:transparent;box-shadow:none;color:var(--cream)}
+body.menu-open{overflow:hidden}
+.burger .ico-x{display:none}
+.burger.open .ico-bars{display:none}
+.burger.open .ico-x{display:block}
+.mobile-menu{overflow-y:auto;overscroll-behavior:contain}
+.mobile-menu a.active{color:var(--chartreuse)}
+.mobile-menu .mm-cta{align-self:flex-start;margin-top:.4rem;border-bottom:none;padding:.95rem 1.7rem;
+background:var(--cream);color:var(--forest-deep);border-radius:2rem;
+font-family:var(--sans);font-size:.76rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+@media (max-width:1080px){
+  .nav-links{gap:1.15rem}
+  .nav-links a{font-size:.68rem;letter-spacing:.1em}
+  .nav-cta{padding:.55rem .95rem;font-size:.66rem;letter-spacing:.1em}
+}
+@media (max-width:1000px){.nav-links,.nav-cta{display:none}.burger{display:block}}
+
+/* page hero */
+.page-hero{position:relative;background:var(--forest-deep);color:var(--cream);padding:clamp(7.5rem,15vw,10rem) 0 clamp(3rem,6vw,4.5rem);overflow:hidden}
+.page-hero::before{content:"";position:absolute;inset:0;opacity:.55;pointer-events:none;
+background:radial-gradient(120% 100% at 88% 0%,rgba(181,200,74,.18),transparent 55%),radial-gradient(90% 90% at 0% 100%,rgba(156,91,51,.22),transparent 60%)}
+.page-hero .inner{position:relative;max-width:1120px;margin:0 auto;padding:0 clamp(1.4rem,4.5vw,2.6rem)}
+.crumbs{margin-bottom:1.5rem;font-family:var(--sans);font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,241,230,.6)}
+.crumbs a{text-decoration:none;color:rgba(245,241,230,.8)}
+.crumbs a:hover{color:var(--chartreuse)}
+.crumbs span{padding:0 .45rem;color:rgba(245,241,230,.4)}
+.page-hero .kicker{color:var(--chartreuse);margin-bottom:1.1rem;display:block}
+.page-hero h1{font-size:clamp(2.6rem,6.4vw,4.6rem)}
+.page-hero .sub{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.1rem,2vw,1.5rem);color:rgba(245,241,230,.82);margin-top:.6rem}
+.page-hero .intro{margin-top:1.5rem;font-size:clamp(1.05rem,1.6vw,1.25rem);max-width:38em;color:rgba(245,241,230,.9)}
+.hero-strip{margin-top:clamp(2rem,4vw,2.8rem);border-top:1px solid var(--hairline-light);padding-top:1.3rem;display:flex;flex-wrap:wrap;gap:1.4rem 2.4rem}
+.hero-strip div{min-width:8rem}
+.hero-strip dt{font-family:var(--sans);font-size:.6rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,241,230,.55);margin-bottom:.3rem}
+.hero-strip dd{font-family:var(--sans);font-size:.82rem;letter-spacing:.02em;color:var(--cream)}
+.plate-wrap{padding:clamp(2rem,4.5vw,3.2rem) 0 0}
+.plate{border:1px solid var(--ink);border-radius:.45rem;overflow:hidden;background:var(--cream)}
+.plate img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}
+.plate figcaption{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 1.2rem;padding:.9rem 1.3rem;border-top:1px solid var(--hairline)}
+.plate .fig{font-family:var(--sans);font-size:.62rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--copper);white-space:nowrap}
+.plate .desc{font-family:var(--serif);font-style:italic;font-weight:300;font-size:.95rem;color:var(--ink-soft)}
+
+/* glance */
+.glance{display:grid;grid-template-columns:1.45fr .9fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+@media (max-width:860px){.glance{grid-template-columns:1fr}}
+.prose{max-width:40em}
+.prose p+p{margin-top:1.1rem}
+.prose .first::first-letter{font-family:var(--serif);font-size:3.1em;float:left;line-height:.82;padding:.05em .12em 0 0;color:var(--copper)}
+.spec{border:1px solid var(--ink);border-radius:.45rem;padding:1.5rem;background:var(--cream);position:sticky;top:6rem}
+.spec h4{font-family:var(--sans);font-size:.64rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--forest)}
+.spec dl{display:grid;gap:0;margin-top:1rem}
+.spec dl>div{display:flex;justify-content:space-between;gap:1.2rem;border-top:1px solid var(--hairline);padding:.7rem 0;font-family:var(--sans);font-size:.72rem;letter-spacing:.02em}
+.spec dt{color:var(--ink-soft);text-transform:uppercase;letter-spacing:.1em;font-size:.62rem;font-weight:600;padding-top:.15rem;flex:0 0 40%}
+.spec dd{font-weight:500;text-align:right;color:var(--ink)}
+.spec dd em{font-style:italic;color:var(--copper);font-family:var(--serif)}
+@media (max-width:860px){.spec{position:static}}
+
+/* facets */
+.facets{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.6rem}
+.facet{border:1px solid var(--hairline);padding:1.2rem 1.1rem;border-radius:.35rem;background:var(--cream)}
+.facet h4{font-family:var(--sans);font-size:.62rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--copper);margin-bottom:.5rem}
+.facet p{font-size:.9rem;color:var(--ink-soft);font-style:italic}
+@media (max-width:720px){.facets{grid-template-columns:1fr 1fr}}
+
+/* blocks */
+.block{border-top:1px solid var(--hairline);padding-top:clamp(2rem,4vw,3rem);margin-top:clamp(2.6rem,5vw,4rem)}
+.block h2{font-size:clamp(1.6rem,3.4vw,2.3rem);max-width:18em}
+.block .body{margin-top:1.3rem;max-width:44em}
+.block .body p+p{margin-top:1.1rem}
+
+/* science / layered details */
+.science{margin-top:1.5rem;border:1px solid var(--hairline);border-radius:.5rem;background:var(--cream);overflow:hidden}
+.science+.science{margin-top:.9rem}
+.science>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.1rem 1.3rem;font-family:var(--sans);font-size:.73rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--forest);transition:background .2s}
+.science>summary:hover{background:var(--cream-2)}
+.science>summary::-webkit-details-marker{display:none}
+.science>summary .pm{position:relative;width:14px;height:14px;flex:none}
+.science>summary .pm::before,.science>summary .pm::after{content:"";position:absolute;background:var(--copper);transition:transform .25s}
+.science>summary .pm::before{top:6px;left:0;width:14px;height:2px}
+.science>summary .pm::after{top:0;left:6px;width:2px;height:14px}
+.science[open]>summary .pm::after{transform:scaleY(0)}
+.science[open]>summary{border-bottom:1px solid var(--hairline);background:var(--cream-2)}
+.science .panel{padding:1.1rem 1.3rem 1.5rem;overflow-x:auto}
+
+.gc-table{width:100%;border-collapse:collapse;font-size:.9rem;min-width:34rem}
+.gc-table th{font-family:var(--sans);font-size:.58rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);text-align:left;padding:.55rem .7rem;border-bottom:1.5px solid var(--ink)}
+.gc-table td{padding:.6rem .7rem;border-bottom:1px solid var(--hairline);vertical-align:top;color:var(--ink)}
+.gc-table tr:last-child td{border-bottom:none}
+.gc-table .cmp{font-weight:600}
+.gc-table .cls{font-family:var(--sans);font-size:.7rem;letter-spacing:.03em;color:var(--ink-soft);white-space:nowrap}
+.gc-table .pct{font-family:var(--sans);font-weight:600;color:var(--copper);white-space:nowrap;text-align:right}
+.gc-note{margin-top:.9rem;font-size:.82rem;font-style:italic;color:var(--ink-soft);max-width:44em}
+
+/* callout */
+.callout{margin-top:1.5rem;border-left:3px solid var(--chartreuse);background:var(--cream-2);padding:1.2rem 1.4rem;border-radius:0 .4rem .4rem 0;max-width:44em}
+.callout h4{font-family:var(--sans);font-size:.64rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--forest);margin-bottom:.5rem}
+.callout p{font-size:.95rem;color:var(--ink-soft)}
+.callout p+p{margin-top:.7rem}
+
+/* references */
+.refs{margin-top:1.2rem;max-width:46em;display:grid;gap:.65rem;list-style:none;counter-reset:r}
+.refs li{position:relative;padding-left:1.8rem;font-size:.84rem;color:var(--ink-soft);line-height:1.5}
+.refs li::before{counter-increment:r;content:counter(r);position:absolute;left:0;top:0;font-family:var(--sans);font-size:.62rem;font-weight:600;color:var(--copper);border:1px solid var(--hairline);border-radius:50%;width:1.2rem;height:1.2rem;display:flex;align-items:center;justify-content:center}
+.refs a{color:var(--copper);text-decoration:none;border-bottom:1px solid var(--hairline)}
+.refs a:hover{color:var(--forest)}
+
+/* buttons + cta row */
+.btn{font-family:var(--sans);font-size:.74rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;padding:.9rem 1.6rem;border-radius:2rem;transition:transform .2s,background .25s,color .25s;display:inline-block}
+.btn:active{transform:scale(.97)}
+.btn-dark{background:var(--forest);color:var(--cream)}
+.btn-dark:hover{background:var(--copper)}
+.mono-cta{margin-top:clamp(2.6rem,5vw,4rem);border-top:1px solid var(--hairline);padding-top:2.2rem;display:flex;flex-wrap:wrap;gap:1.2rem 2rem;align-items:center;justify-content:space-between}
+.mono-cta .back{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--forest);display:inline-flex;align-items:center;gap:.5rem}
+.mono-cta .back:hover{color:var(--copper)}
+
+/* footer */
+footer{background:var(--forest-deep);color:var(--cream);padding:clamp(3.5rem,7vw,5rem) 0 2.2rem}
+.foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2.2rem;padding-bottom:2.6rem;border-bottom:1px solid var(--hairline-light)}
+.foot-brand p{margin-top:1rem;font-size:.98rem;color:rgba(245,241,230,.8);max-width:24em}
+.foot-brand .sig{font-style:italic;color:var(--chartreuse);margin-top:.5rem}
+.foot-col h5{font-family:var(--sans);font-size:.66rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:rgba(245,241,230,.6);margin-bottom:1rem}
+.foot-col ul{list-style:none;display:grid;gap:.6rem}
+.foot-col a{text-decoration:none;font-size:.95rem;color:rgba(245,241,230,.88)}
+.foot-col a:hover{color:var(--chartreuse)}
+.foot-base{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;padding-top:1.6rem;font-family:var(--sans);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,241,230,.55)}
+
+/* ---------- footer layout with legal column ---------- */
+.foot-brand{flex:1 1 20rem;min-width:16rem}
+.foot-col{flex:0 1 auto;min-width:9rem}
+.foot-base{flex-direction:column;align-items:flex-start;gap:.55rem;text-transform:none;letter-spacing:.09em;font-size:.66rem;line-height:1.6}
+.foot-base .legalname{color:rgba(245,241,230,.72)}
+.foot-base .row{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;width:100%;text-transform:uppercase;letter-spacing:.16em;font-size:.64rem}
+
+
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="bar">
+    <a class="wordmark" href="index.html" aria-label="Raima Naturals — home">
+      <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="1.1"/><circle cx="16" cy="16" r="9.5" stroke="currentColor" stroke-width=".9"/><path d="M16 6.5v19M6.5 16h19M9.3 9.3l13.4 13.4M22.7 9.3L9.3 22.7" stroke="currentColor" stroke-width=".55"/></svg>
+      <span class="wm-text">Raima Naturals<span class="wm-sub">East Himalaya</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="botanical-library.html" class="active">Botanical Library</a></li>
+      <li><a href="index.html#terroir">Terroir</a></li>
+      <li><a href="index.html#craft">Craft</a></li>
+      <li><a href="index.html#founding">Founding Years</a></li>
+    </ul>
+    <a class="nav-cta" href="contact.html">Request samples</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <svg class="ico-bars" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+      <svg class="ico-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mmenu">
+  <a class="active" href="botanical-library.html">Botanical Library</a>
+  <a href="index.html#terroir">Terroir</a>
+  <a href="index.html#craft">Craft</a>
+  <a href="index.html#founding">Founding Years</a>
+  <a class="mm-cta" href="contact.html">Request samples</a>
+</div>
+
+<!-- HERO -->
+<header class="page-hero">
+  <div class="inner">
+    <div class="crumbs rv"><a href="index.html">Raima Naturals</a><span>/</span><a href="botanical-library.html">Botanical Library</a><span>/</span>Agarwood</div>
+    <span class="kicker rv">Entry i · Aromatic &amp; medicinal</span>
+    <h1 class="rv">Agarwood</h1>
+    <div class="sub rv"><em>Aquilaria</em> spp. — the wood that sinks</div>
+    <p class="intro rv">The most storied base note in perfumery. Agarwood is not a wood a tree simply grows — it is a resin the tree lays down to defend itself, and only a fraction of trees ever make it. The result, oud, is among the most valuable natural materials on earth.</p>
+    <dl class="hero-strip rv">
+      <div><dt>Genus</dt><dd>Aquilaria · Thymelaeaceae</dd></div>
+      <div><dt>Native belt</dt><dd>NE India &amp; SE Asia</dd></div>
+      <div><dt>Part used</dt><dd>Resinous heartwood</dd></div>
+      <div><dt>Olfactive</dt><dd>Woody · balsamic · animalic base</dd></div>
+      <div><dt>Status</dt><dd>CITES Appendix II</dd></div>
+    </dl>
+  </div>
+</header>
+
+<!-- SPECIMEN PLATE -->
+<div class="container plate-wrap">
+  <figure class="plate rv">
+    <img src="agarwood-heartwood.jpg" alt="Close-up of resinous agarwood heartwood, dark oleoresin streaked through paler sapwood" loading="lazy">
+    <figcaption><span class="fig">Plate I</span><span class="desc">Resin-streaked agarwood heartwood — the raw material behind oud.</span></figcaption>
+  </figure>
+</div>
+
+<!-- AT A GLANCE -->
+<section class="section">
+  <div class="container">
+    <div class="sec-label rv"><span class="num">01</span><span class="rule"></span><span class="name">At a glance</span></div>
+    <div class="glance">
+      <div class="prose rv">
+        <p class="first">Agarwood — <em>agar</em> in Hindi, <em>sanchi/sasi</em> in Assamese, <em>oud hindi</em> to the Arab perfume trade — is the dark, fragrant, resin-soaked heartwood of trees in the genus <em>Aquilaria</em>. Healthy Aquilaria wood is pale, light and almost odourless. Agarwood only appears when the tree is wounded and colonised by fungi and microbes; in defence, it floods the injured wood with an aromatic oleoresin.</p>
+        <p>That resin is so dense the best grades sink in water — the origin of the Japanese name <em>jinkoh</em>, “the wood that sinks.” Because formation depends on injury and infection, only a small fraction of wild trees ever carry usable agarwood, which is why both the wood and its distilled oil command extraordinary prices.</p>
+        <p>For a house built in the Eastern Himalaya, agarwood is not exotic — it is local. Northeast India, including Tripura, sits inside the native range of <em>Aquilaria malaccensis</em> and is today one of the largest cultivated agarwood belts in the world.</p>
+      </div>
+      <aside class="spec rv">
+        <h4>Botanical fact-file</h4>
+        <dl>
+          <div><dt>Common names</dt><dd>Agar, agaru, sanchi, oud hindi</dd></div>
+          <div><dt>Family</dt><dd>Thymelaeaceae</dd></div>
+          <div><dt>Genus</dt><dd><em>Aquilaria</em> · ~21 species</dd></div>
+          <div><dt>In India</dt><dd>A. malaccensis; A. khasiana (endemic)</dd></div>
+          <div><dt>Part used</dt><dd>Resinous heartwood</dd></div>
+          <div><dt>Extraction</dt><dd>Hydro / steam distillation; CO₂</dd></div>
+          <div><dt>Olfactive family</dt><dd>Woody-resinous base</dd></div>
+          <div><dt>IUCN</dt><dd>A. malaccensis — Critically Endangered</dd></div>
+          <div><dt>Trade status</dt><dd>CITES Appendix II</dd></div>
+          <div><dt>Indicative oil value</dt><dd>~US$10,000–40,000 / kg</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- OLFACTIVE -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="block" style="margin-top:0;border-top:none;padding-top:0">
+      <div class="sec-label rv"><span class="num">02</span><span class="rule"></span><span class="name">Olfactive profile</span></div>
+      <h2 class="rv">A deep, animalic, sacred wood.</h2>
+      <div class="body rv">
+        <p>Agarwood is a base note in the truest sense — slow, heavy and enormously tenacious, a natural fixative that anchors a composition and unfolds for hours. Perfumers reach for it in amber bases, woody accords, chypres and fougères, and across the whole of modern “oud” fine fragrance.</p>
+        <p>The character is complex and unmistakable: a precious woody heart wrapped in sweet warmth, smoky incense and honeyed tobacco, shot through with animalic notes that read like musk or castoreum. The drydown turns sweeter and muskier still.</p>
+      </div>
+      <div class="facets">
+        <div class="facet rv"><h4>Wood</h4><p>precious, resinous, dense</p></div>
+        <div class="facet rv"><h4>Balsam</h4><p>sweet, warm, honeyed</p></div>
+        <div class="facet rv"><h4>Smoke</h4><p>incense, ambery, tobacco</p></div>
+        <div class="facet rv"><h4>Animal</h4><p>musky, castoreum, leathery</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE SCIENCE (LAYERED) -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="block" style="margin-top:0">
+      <div class="sec-label rv"><span class="num">03</span><span class="rule"></span><span class="name">The GC-MS lens</span></div>
+      <h2 class="rv">Two chemical families, found together almost nowhere else.</h2>
+      <div class="body rv">
+        <p>Agarwood’s chemistry is built on two classes of molecule. <strong>Sesquiterpenes</strong> make up the volatile, aromatic fraction you smell first — a dense thicket of agarofurans, agarospiranes, eudesmanes, eremophilanes and guaianes. <strong>2-(2-phenylethyl)chromones</strong> (PECs) are heavier, low-volatility molecules that give agar its depth, its tenacity and much of its traditional pharmacology. Their co-occurrence is effectively a chemical signature of agarwood.</p>
+        <p>One caution before the numbers: agar is not a fixed material. Composition swings dramatically with species, resin grade, the individual tree, how the resin was induced, and the extraction method. Treat any single profile as a snapshot of one sample — never a universal standard. Expand the panels below for the detail.</p>
+      </div>
+
+      <details class="science rv">
+        <summary>Signature sesquiterpenes — the aromatic fraction <span class="pm"></span></summary>
+        <div class="panel">
+          <table class="gc-table">
+            <thead><tr><th>Compound</th><th>Class</th><th>Note / role</th></tr></thead>
+            <tbody>
+              <tr><td class="cmp">α- / β-Agarofuran, dihydro-β-agarofuran</td><td class="cls">Agarofuran</td><td>Warm woody; characteristic agar markers</td></tr>
+              <tr><td class="cmp">Agarospirol</td><td class="cls">Agarospirane</td><td>Woody; a key indicator of genuine agar oil</td></tr>
+              <tr><td class="cmp">Jinkohol, jinkoh-eremol</td><td class="cls">Sesquiterpene alcohol</td><td>Sweet-woody; named for <em>jinkoh</em></td></tr>
+              <tr><td class="cmp">Kusunol (valerianol)</td><td class="cls">Eudesmane</td><td>Woody-balsamic</td></tr>
+              <tr><td class="cmp">Dihydrokaranone, karanone</td><td class="cls">Eremophilane</td><td>Deep woody ketones</td></tr>
+              <tr><td class="cmp">Baimuxinol, isobaimuxinol, baimuxinal</td><td class="cls">Agarospirane</td><td>Woody; common in cultivated agar</td></tr>
+              <tr><td class="cmp">β-Eudesmol, 10-<em>epi</em>-γ-eudesmol</td><td class="cls">Eudesmane</td><td>Woody alcohols</td></tr>
+              <tr><td class="cmp">Selina-3,11-dien-9-one</td><td class="cls">Eudesmane ketone</td><td>Characteristic agar ketone</td></tr>
+              <tr><td class="cmp">α-Guaiene, α-bulnesene, kessane</td><td class="cls">Guaiane</td><td>Green-spicy woody; often abundant</td></tr>
+              <tr><td class="cmp">Valencene, α- / β-selinene</td><td class="cls">Selinane</td><td>Woody hydrocarbons</td></tr>
+            </tbody>
+          </table>
+          <p class="gc-note">Compound set compiled from published reviews of agarwood chemistry across the main <em>Aquilaria</em> species [1][2][6]. Relative abundances vary by sample; this is a qualitative map of what a GC-MS trace of agar oil typically contains.</p>
+        </div>
+      </details>
+
+      <details class="science rv">
+        <summary>2-(2-phenylethyl)chromones — the deep base <span class="pm"></span></summary>
+        <div class="panel">
+          <table class="gc-table">
+            <thead><tr><th>Compound</th><th>Class</th><th>Note / role</th></tr></thead>
+            <tbody>
+              <tr><td class="cmp">2-(2-Phenylethyl)chromone (PEC)</td><td class="cls">Chromone (parent)</td><td>The core agarwood chromone scaffold</td></tr>
+              <tr><td class="cmp">6-Methoxy- / 6-hydroxy-2-(2-phenylethyl)chromones</td><td class="cls">Chromone</td><td>Oxygenated PECs; heavy, tenacious base</td></tr>
+              <tr><td class="cmp">Crassin A–D, aquilacrassin A–F (species-specific)</td><td class="cls">Chromone</td><td>Markers described from specific species</td></tr>
+            </tbody>
+          </table>
+          <p class="gc-note">Chromones are semi- to non-volatile: they are abundant in the wood itself, in CO₂ extracts and in aged or heated material, and contribute far less to a light steam distillate. In one broad characterisation, chromones made up the majority of constituents (~57%) versus sesquiterpenes (~35%) [2] — a reminder that “agarwood oil” and “agarwood smoke/extract” are chemically different things.</p>
+        </div>
+      </details>
+
+      <details class="science rv">
+        <summary>An example GC-MS snapshot — A. malaccensis <span class="pm"></span></summary>
+        <div class="panel">
+          <table class="gc-table">
+            <thead><tr><th>Compound</th><th>Class</th><th class="pct">Approx.</th></tr></thead>
+            <tbody>
+              <tr><td class="cmp">Kessane</td><td class="cls">Guaiane (oxygenated)</td><td class="pct">~29%</td></tr>
+              <tr><td class="cmp">α-Guaiene</td><td class="cls">Guaiane</td><td class="pct">~25%</td></tr>
+              <tr><td class="cmp">β-Dihydroagarofuran</td><td class="cls">Agarofuran</td><td class="pct">~11%</td></tr>
+              <tr><td class="cmp">β-Selinene, caryophyllene oxide, α-muurolene, epoxy-bulnesene</td><td class="cls">Sesquiterpenes</td><td class="pct">&lt;1% each</td></tr>
+            </tbody>
+          </table>
+          <p class="gc-note">Illustrative only — headspace SPME (DVB/CAR/PDMS) of one <em>A. malaccensis</em> sample, in which 70–100+ compounds were detected [6]. A different tree, grade or a true distilled oil would look markedly different. This is exactly why every serious buyer asks for a batch-specific GC-MS.</p>
+        </div>
+      </details>
+
+      <div class="callout rv">
+        <h4>How we handle these numbers</h4>
+        <p>The profiles above map agarwood chemistry across the genus, drawn from the published literature. They are a guide to the material — not a substitute for a specification.</p>
+        <p>The numbers that matter to a formulator are the ones printed on the batch in front of them. Every lot we release is characterised on our own cultivated Tripura material and ships with its chromatogram attached.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMATION & RARITY -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="block" style="margin-top:0">
+      <div class="sec-label rv"><span class="num">04</span><span class="rule"></span><span class="name">Why it is rare</span></div>
+      <h2 class="rv">A wound, a fungus, and years of patience.</h2>
+      <div class="body rv">
+        <p>Agarwood forms through a stress response. When an Aquilaria tree is injured — by storm, insect, animal or blade — and the wound is invaded by fungi such as <em>Phaeoacremonium</em> and <em>Fusarium</em> species, the tree deposits fragrant oleoresin around the site to seal and defend itself. Over months to years, that resin accumulates and darkens the wood into agar.</p>
+        <p>In the wild this is rare and unpredictable, which drove centuries of destructive over-harvesting. Modern cultivation instead grows Aquilaria as a plantation crop and induces resin deliberately, which is both the sustainable path and the legal one for trade — the subject of the status section below.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOTANY & GENUS -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="block" style="margin-top:0">
+      <div class="sec-label rv"><span class="num">05</span><span class="rule"></span><span class="name">Botany &amp; the genus</span></div>
+      <h2 class="rv">The <em>Aquilaria</em> group.</h2>
+      <div class="body rv">
+        <p><em>Aquilaria</em> is a genus of evergreen tropical trees, 20–40 m tall, in the family Thymelaeaceae, with roughly 21 accepted species spread from India and Bangladesh across Southeast Asia to Borneo and the Philippines. Four species supply most commercial agarwood: <em>A. malaccensis</em>, <em>A. sinensis</em>, <em>A. crassna</em> and <em>A. subintegra</em>.</p>
+        <p>India is home to two. <em>Aquilaria malaccensis</em> — the classic “oud hindi” tree — is the widespread species and the one cultivated across the Northeast. <em>Aquilaria khasiana</em> is endemic to the Meghalaya hills and critically endangered, with only a handful of wild individuals recorded — a reminder that the genus carries both commercial promise and real conservation weight.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- USES -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="block" style="margin-top:0">
+      <div class="sec-label rv"><span class="num">06</span><span class="rule"></span><span class="name">Traditional &amp; medicinal use</span></div>
+      <h2 class="rv">Incense, medicine, perfume.</h2>
+      <div class="body rv">
+        <p>Agarwood has been burned as sacred incense in Buddhist, Hindu and Muslim practice for millennia, and distilled into oud, one of perfumery’s crown ingredients. In traditional medicine it is equally established: as <em>chen xiang</em> in Chinese medicine and <em>agaru</em> in Ayurveda, it is used to regulate digestion, calm the mind, relieve pain and ease breathing, while the leaves are taken for constipation, high blood pressure and diabetes.</p>
+        <p>Modern pharmacological studies report anti-inflammatory, antioxidant, antimicrobial and sedative activities, much of it attributed to the chromone fraction. These are traditional and preclinical findings offered as botanical context — not medical advice or health claims.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOURCING & STATUS -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="block" style="margin-top:0">
+      <div class="sec-label rv"><span class="num">07</span><span class="rule"></span><span class="name">Sourcing, terroir &amp; status</span></div>
+      <h2 class="rv">Cultivated, permitted, documented.</h2>
+      <div class="body rv">
+        <p>Every species of <em>Aquilaria</em> is listed on <strong>CITES Appendix II</strong>, and <em>A. malaccensis</em> is Critically Endangered in the wild. This is not a footnote — it defines how the botanical can be worked. In India, the export quota for <em>wild</em>-harvested agarwood is zero; only <strong>cultivated</strong> material may be traded internationally, under permit.</p>
+        <p>That framework has recently opened up. In 2024, following a national non-detriment assessment, CITES raised India’s annual export quota to roughly <strong>151,080 kg</strong> of agarwood chips and powder and <strong>7,050 kg</strong> of oil — up from 25,000 kg and 1,500 kg — recognising an estimated <strong>139.89 million cultivated Aquilaria trees</strong> across Assam, Manipur, Nagaland and <strong>Tripura</strong>. Assam has since begun the first legal chip exports to the Gulf.</p>
+        <p>For Raima this is the whole point: agarwood here is a legitimate, cultivated, Northeast-Indian crop with a real and widening export path — provided it is grown, inducted and papered correctly. Any agarwood we pursue will be cultivated, permit-backed and GC-MS documented. Nothing wild, nothing grey.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REFERENCES -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="block" style="margin-top:0">
+      <div class="sec-label rv"><span class="num">✦</span><span class="rule"></span><span class="name">Sources</span></div>
+      <ul class="refs rv">
+        <li>Naef, R. et al. — <em>Overview of sesquiterpenes and chromones of agarwood originating from four main species of the genus Aquilaria</em>, RSC Advances (2019). <a href="https://pubs.rsc.org/en/content/articlehtml/2019/ra/c8ra09409h">pubs.rsc.org</a></li>
+        <li><em>An Updated Review of Aquilaria Species: Distribution, Chemical Constituents and Authentication Methods</em>, Asian Journal of Plant Sciences (2024). <a href="https://scialert.net/fulltext/?doi=ajps.2024.146.167">scialert.net</a></li>
+        <li><em>Aquilaria malaccensis</em> — species, range, formation, CITES/IUCN. Wikipedia. <a href="https://en.wikipedia.org/wiki/Aquilaria_malaccensis">en.wikipedia.org</a></li>
+        <li>Agarwood (oud) olfactive profile — Eden Botanicals. <a href="https://www.edenbotanicals.com/agarwood-fine.html">edenbotanicals.com</a></li>
+        <li><em>CITES notifies increase in annual export quota for agarwood in India</em>, Down To Earth (2024). <a href="https://www.downtoearth.org.in/forests/cites-notified-increase-in-annual-export-quota-for-agarwood-in-india">downtoearth.org.in</a></li>
+        <li>GC-MS / SPME headspace study of <em>Aquilaria malaccensis</em> — Biomedical Journal of Scientific &amp; Technical Research. <a href="http://biomedres.us/fulltexts/BJSTR.MS.ID.000499.php">biomedres.us</a></li>
+        <li>Indicative oud oil pricing (seller reference; volatile). <a href="https://kannaujattar.com/how-much-does-pure-agarwood-oil-cost-why-is-it-so-expensive/">kannaujattar.com</a></li>
+      </ul>
+      <div class="mono-cta rv">
+        <a class="back" href="botanical-library.html">← Back to the Botanical Library</a>
+        <a class="btn btn-dark" href="contact.html?re=Agarwood">Request fragrance samples</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="wordmark" href="index.html" style="text-decoration:none">
+          <svg viewBox="0 0 32 32" fill="none" aria-hidden="true" width="26" height="26"><circle cx="16" cy="16" r="15" stroke="#B5C84A" stroke-width="1.1"/><circle cx="16" cy="16" r="9.5" stroke="#B5C84A" stroke-width=".9"/><path d="M16 6.5v19M6.5 16h19M9.3 9.3l13.4 13.4M22.7 9.3L9.3 22.7" stroke="#B5C84A" stroke-width=".55"/></svg>
+          <span class="wm-text">Raima Naturals<span class="wm-sub">East Himalaya</span></span>
+        </a>
+        <p>A specialty aroma house of the East Himalaya.<br>Founding stage · Tripura, India.</p>
+        <p class="sig">Provenance, distilled.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="botanical-library.html">Botanical Library</a></li>
+          <li><a href="index.html#terroir">Terroir</a></li>
+          <li><a href="index.html#craft">Craft</a></li>
+          <li><a href="index.html#founding">Founding Years</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="contact.html">Request samples</a></li>
+          <li><a href="mailto:raimanaturals@gmail.com">raimanaturals@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+          <li><a href="shipping-policy.html">Shipping Policy</a></li>
+          <li><a href="return-policy.html">Return Policy</a></li>
+          <li><a href="refund-policy.html">Refund &amp; Cancellation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span class="legalname">Raima Naturals Private Limited — formerly known as Atkalapa Biotechnology LLP.</span>
+      <span class="row"><span>© 2026 Raima Naturals</span><span>Single origin · Small batch · Documented</span></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const nav=document.getElementById('nav');
+const burger=document.getElementById('burger'),mmenu=document.getElementById('mmenu');
+const onScroll=()=>nav.classList.toggle('solid',window.scrollY>48 && !mmenu.classList.contains('open'));
+onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+const setMenu=open=>{
+  mmenu.classList.toggle('open',open);
+  burger.classList.toggle('open',open);
+  nav.classList.toggle('menu-open',open);
+  document.body.classList.toggle('menu-open',open);
+  burger.setAttribute('aria-expanded',open);
+  burger.setAttribute('aria-label',open?'Close menu':'Open menu');
+  if(open){nav.classList.remove('solid');}else{onScroll();}
+};
+burger.addEventListener('click',()=>setMenu(!mmenu.classList.contains('open')));
+mmenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&mmenu.classList.contains('open'))setMenu(false);});
+const mqDesktop=window.matchMedia('(min-width:1001px)');
+mqDesktop.addEventListener('change',e=>{if(e.matches)setMenu(false);});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

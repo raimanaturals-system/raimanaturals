@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Satkora — Citrus macroptera | Botanical Library — Raima Naturals</title>
+<meta name="description" content="A scientific and olfactive monograph on satkora / shatkora (Citrus macroptera, Rutaceae): published GC-MS chemistry and oil yield, aroma, and the Sylheti culinary heritage behind Northeast India's beef-curry citrus.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%231C3327'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23B5C84A' stroke-width='1.2'/%3E%3Cpath d='M16 7v18M7 16h18M9.6 9.6l12.8 12.8M22.4 9.6L9.6 22.4' stroke='%23B5C84A' stroke-width='.8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#1C3327;--forest-deep:#12241B;--cream:#F5F1E6;--cream-2:#EDE7D6;
+  --ink:#20261F;--ink-soft:#4A5347;--chartreuse:#B5C84A;--copper:#9C5B33;
+  --hairline:rgba(32,38,31,.16);--hairline-light:rgba(245,241,230,.22);
+  --serif:"Fraunces",Georgia,serif;--text:"Newsreader",Georgia,serif;--sans:"Archivo",Helvetica,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:var(--text);font-size:1.075rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+::selection{background:var(--chartreuse);color:var(--forest-deep)}
+img{max-width:100%;display:block}
+a{color:inherit}
+body::after{content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.05;mix-blend-mode:multiply;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E")}
+.container{max-width:1120px;margin:0 auto;padding:0 clamp(1.4rem,4.5vw,2.6rem)}
+.section{padding:clamp(3.5rem,7vw,6rem) 0}
+.kicker{font-family:var(--sans);font-size:.7rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase}
+.sec-label{display:flex;align-items:center;gap:1rem;margin-bottom:clamp(1.6rem,4vw,2.4rem)}
+.sec-label .num{font-family:var(--serif);font-style:italic;font-weight:300;font-size:1.4rem;color:var(--copper)}
+.sec-label .rule{flex:0 0 3.2rem;height:1px;background:currentColor;opacity:.35}
+.sec-label .name{font-family:var(--sans);font-size:.68rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase}
+h1,h2,h3{font-family:var(--serif);font-weight:340;line-height:1.1;letter-spacing:-.01em}
+.lede{font-size:clamp(1.1rem,1.6vw,1.25rem);color:var(--ink-soft);max-width:36em}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.6,.2,1),transform .8s cubic-bezier(.2,.6,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .35s,color .35s,box-shadow .35s;color:var(--cream)}
+nav .bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.1rem clamp(1.4rem,4.5vw,2.6rem);max-width:1400px;margin:0 auto}
+nav.solid{background:var(--cream);color:var(--ink);box-shadow:0 1px 0 var(--hairline)}
+.wordmark{display:flex;align-items:center;gap:.65rem;text-decoration:none}
+.wordmark svg{width:26px;height:26px;flex:none}
+.wordmark .wm-text{font-family:var(--sans);font-weight:600;font-size:.82rem;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap}
+.wordmark .wm-sub{display:block;font-weight:400;font-size:.56rem;letter-spacing:.3em;opacity:.75;margin-top:.15rem}
+.nav-links{display:flex;align-items:center;gap:1.7rem;list-style:none}
+.nav-links a{font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;opacity:.85;transition:opacity .2s}
+.nav-links a:hover,.nav-links a.active{opacity:1}
+.nav-links a.active{color:var(--chartreuse)}
+nav.solid .nav-links a.active{color:var(--copper)}
+.nav-cta{font-family:var(--sans);font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border:1px solid currentColor;padding:.6rem 1.1rem;border-radius:2rem;transition:background .25s,color .25s;white-space:nowrap}
+nav:not(.solid) .nav-cta:hover{background:var(--cream);color:var(--forest)}
+nav.solid .nav-cta:hover{background:var(--forest);color:var(--cream);border-color:var(--forest)}
+.burger{display:none;background:none;border:none;color:inherit;cursor:pointer;padding:.4rem}
+.burger svg{width:26px;height:26px;display:block}
+.mobile-menu{display:none;position:fixed;inset:0;z-index:99;background:var(--forest-deep);color:var(--cream);padding:7rem 2rem 2rem;flex-direction:column;gap:1.4rem}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-family:var(--serif);font-size:1.6rem;text-decoration:none;border-bottom:1px solid var(--hairline-light);padding-bottom:1rem}
+.nav-links a{white-space:nowrap}
+nav.menu-open{background:transparent;box-shadow:none;color:var(--cream)}
+body.menu-open{overflow:hidden}
+.burger .ico-x{display:none}
+.burger.open .ico-bars{display:none}
+.burger.open .ico-x{display:block}
+.mobile-menu{overflow-y:auto;overscroll-behavior:contain}
+.mobile-menu a.active{color:var(--chartreuse)}
+.mobile-menu .mm-cta{align-self:flex-start;margin-top:.4rem;border-bottom:none;padding:.95rem 1.7rem;
+background:var(--cream);color:var(--forest-deep);border-radius:2rem;
+font-family:var(--sans);font-size:.76rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+@media (max-width:1080px){
+  .nav-links{gap:1.15rem}
+  .nav-links a{font-size:.68rem;letter-spacing:.1em}
+  .nav-cta{padding:.55rem .95rem;font-size:.66rem;letter-spacing:.1em}
+}
+@media (max-width:1000px){.nav-links,.nav-cta{display:none}.burger{display:block}}
+.page-hero{position:relative;background:var(--forest-deep);color:var(--cream);padding:clamp(7.5rem,15vw,10rem) 0 clamp(3rem,6vw,4.5rem);overflow:hidden}
+.page-hero::before{content:"";position:absolute;inset:0;opacity:.55;pointer-events:none;
+background:radial-gradient(120% 100% at 88% 0%,rgba(181,200,74,.2),transparent 55%),radial-gradient(90% 90% at 0% 100%,rgba(156,91,51,.2),transparent 60%)}
+.page-hero .inner{position:relative;max-width:1120px;margin:0 auto;padding:0 clamp(1.4rem,4.5vw,2.6rem)}
+.crumbs{margin-bottom:1.5rem;font-family:var(--sans);font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,241,230,.6)}
+.crumbs a{text-decoration:none;color:rgba(245,241,230,.8)}
+.crumbs a:hover{color:var(--chartreuse)}
+.crumbs span{padding:0 .45rem;color:rgba(245,241,230,.4)}
+.page-hero .kicker{color:var(--chartreuse);margin-bottom:1.1rem;display:block}
+.page-hero h1{font-size:clamp(2.6rem,6.4vw,4.6rem)}
+.page-hero .sub{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.1rem,2vw,1.5rem);color:rgba(245,241,230,.82);margin-top:.6rem}
+.page-hero .intro{margin-top:1.5rem;font-size:clamp(1.05rem,1.6vw,1.25rem);max-width:38em;color:rgba(245,241,230,.9)}
+.hero-strip{margin-top:clamp(2rem,4vw,2.8rem);border-top:1px solid var(--hairline-light);padding-top:1.3rem;display:flex;flex-wrap:wrap;gap:1.4rem 2.4rem}
+.hero-strip div{min-width:8rem}
+.hero-strip dt{font-family:var(--sans);font-size:.6rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,241,230,.55);margin-bottom:.3rem}
+.hero-strip dd{font-family:var(--sans);font-size:.82rem;letter-spacing:.02em;color:var(--cream)}
+.plate-wrap{padding:clamp(2rem,4.5vw,3.2rem) 0 0}
+.plate{border:1px solid var(--ink);border-radius:.45rem;overflow:hidden;background:var(--cream)}
+.plate img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}
+.plate figcaption{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 1.2rem;padding:.9rem 1.3rem;border-top:1px solid var(--hairline)}
+.plate .fig{font-family:var(--sans);font-size:.62rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--copper);white-space:nowrap}
+.plate .desc{font-family:var(--serif);font-style:italic;font-weight:300;font-size:.95rem;color:var(--ink-soft)}
+.glance{display:grid;grid-template-columns:1.45fr .9fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+@media (max-width:860px){.glance{grid-template-columns:1fr}}
+.prose{max-width:40em}
+.prose p+p{margin-top:1.1rem}
+.prose .first::first-letter{font-family:var(--serif);font-size:3.1em;float:left;line-height:.82;padding:.05em .12em 0 0;color:var(--copper)}
+.spec{border:1px solid var(--ink);border-radius:.45rem;padding:1.5rem;background:var(--cream);position:sticky;top:6rem}
+.spec h4{font-family:var(--sans);font-size:.64rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--forest)}
+.spec dl{display:grid;gap:0;margin-top:1rem}
+.spec dl>div{display:flex;justify-content:space-between;gap:1.2rem;border-top:1px solid var(--hairline);padding:.7rem 0;font-family:var(--sans);font-size:.72rem;letter-spacing:.02em}
+.spec dt{color:var(--ink-soft);text-transform:uppercase;letter-spacing:.1em;font-size:.62rem;font-weight:600;padding-top:.15rem;flex:0 0 40%}
+.spec dd{font-weight:500;text-align:right;color:var(--ink)}
+.spec dd em{font-style:italic;color:var(--copper);font-family:var(--serif)}
+@media (max-width:860px){.spec{position:static}}
+.facets{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.6rem}
+.facet{border:1px solid var(--hairline);padding:1.2rem 1.1rem;border-radius:.35rem;background:var(--cream)}
+.facet h4{font-family:var(--sans);font-size:.62rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--copper);margin-bottom:.5rem}
+.facet p{font-size:.9rem;color:var(--ink-soft);font-style:italic}
+@media (max-width:720px){.facets{grid-template-columns:1fr 1fr}}
+.block{border-top:1px solid var(--hairline);padding-top:clamp(2rem,4vw,3rem);margin-top:clamp(2.6rem,5vw,4rem)}
+.block h2{font-size:clamp(1.6rem,3.4vw,2.3rem);max-width:18em}
+.block .body{margin-top:1.3rem;max-width:44em}
+.block .body p+p{margin-top:1.1rem}
+.science{margin-top:1.5rem;border:1px solid var(--hairline);border-radius:.5rem;background:var(--cream);overflow:hidden}
+.science+.science{margin-top:.9rem}
+.science>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.1rem 1.3rem;font-family:var(--sans);font-size:.73rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--forest);transition:background .2s}
+.science>summary:hover{background:var(--cream-2)}
+.science>summary::-webkit-details-marker{display:none}
+.science>summary .pm{position:relative;width:14px;height:14px;flex:none}
+.science>summary .pm::before,.science>summary .pm::after{content:"";position:absolute;background:var(--copper);transition:transform .25s}
+.science>summary .pm::before{top:6px;left:0;width:14px;height:2px}
+.science>summary .pm::after{top:0;left:6px;width:2px;height:14px}
+.science[open]>summary .pm::after{transform:scaleY(0)}
+.science[open]>summary{border-bottom:1px solid var(--hairline);background:var(--cream-2)}
+.science .panel{padding:1.1rem 1.3rem 1.5rem;overflow-x:auto}
+.gc-table{width:100%;border-collapse:collapse;font-size:.9rem;min-width:34rem}
+.gc-table th{font-family:var(--sans);font-size:.58rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);text-align:left;padding:.55rem .7rem;border-bottom:1.5px solid var(--ink)}
+.gc-table td{padding:.6rem .7rem;border-bottom:1px solid var(--hairline);vertical-align:top;color:var(--ink)}
+.gc-table tr:last-child td{border-bottom:none}
+.gc-table .cmp{font-weight:600}
+.gc-table .cls{font-family:var(--sans);font-size:.7rem;letter-spacing:.03em;color:var(--ink-soft);white-space:nowrap}
+.gc-table .pct{font-family:var(--sans);font-weight:600;color:var(--copper);white-space:nowrap;text-align:right}
+.gc-note{margin-top:.9rem;font-size:.82rem;font-style:italic;color:var(--ink-soft);max-width:44em}
+.callout{margin-top:1.5rem;border-left:3px solid var(--chartreuse);background:var(--cream-2);padding:1.2rem 1.4rem;border-radius:0 .4rem .4rem 0;max-width:44em}
+.callout h4{font-family:var(--sans);font-size:.64rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--forest);margin-bottom:.5rem}
+.callout p{font-size:.95rem;color:var(--ink-soft)}
+.callout p+p{margin-top:.7rem}
+.refs{margin-top:1.2rem;max-width:46em;display:grid;gap:.65rem;list-style:none;counter-reset:r}
+.refs li{position:relative;padding-left:1.8rem;font-size:.84rem;color:var(--ink-soft);line-height:1.5}
+.refs li::before{counter-increment:r;content:counter(r);position:absolute;left:0;top:0;font-family:var(--sans);font-size:.62rem;font-weight:600;color:var(--copper);border:1px solid var(--hairline);border-radius:50%;width:1.2rem;height:1.2rem;display:flex;align-items:center;justify-content:center}
+.refs a{color:var(--copper);text-decoration:none;border-bottom:1px solid var(--hairline)}
+.refs a:hover{color:var(--forest)}
+.btn{font-family:var(--sans);font-size:.74rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;padding:.9rem 1.6rem;border-radius:2rem;transition:transform .2s,background .25s,color .25s;display:inline-block}
+.btn:active{transform:scale(.97)}
+.btn-dark{background:var(--forest);color:var(--cream)}
+.btn-dark:hover{background:var(--copper)}
+.mono-cta{margin-top:clamp(2.6rem,5vw,4rem);border-top:1px solid var(--hairline);padding-top:2.2rem;display:flex;flex-wrap:wrap;gap:1.2rem 2rem;align-items:center;justify-content:space-between}
+.mono-cta .back{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--forest);display:inline-flex;align-items:center;gap:.5rem}
+.mono-cta .back:hover{color:var(--copper)}
+footer{background:var(--forest-deep);color:var(--cream);padding:clamp(3.5rem,7vw,5rem) 0 2.2rem}
+.foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2.2rem;padding-bottom:2.6rem;border-bottom:1px solid var(--hairline-light)}
+.foot-brand p{margin-top:1rem;font-size:.98rem;color:rgba(245,241,230,.8);max-width:24em}
+.foot-brand .sig{font-style:italic;color:var(--chartreuse);margin-top:.5rem}
+.foot-col h5{font-family:var(--sans);font-size:.66rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:rgba(245,241,230,.6);margin-bottom:1rem}
+.foot-col ul{list-style:none;display:grid;gap:.6rem}
+.foot-col a{text-decoration:none;font-size:.95rem;color:rgba(245,241,230,.88)}
+.foot-col a:hover{color:var(--chartreuse)}
+.foot-base{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;padding-top:1.6rem;font-family:var(--sans);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,241,230,.55)}
+
+/* ---------- footer layout with legal column ---------- */
+.foot-brand{flex:1 1 20rem;min-width:16rem}
+.foot-col{flex:0 1 auto;min-width:9rem}
+.foot-base{flex-direction:column;align-items:flex-start;gap:.55rem;text-transform:none;letter-spacing:.09em;font-size:.66rem;line-height:1.6}
+.foot-base .legalname{color:rgba(245,241,230,.72)}
+.foot-base .row{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;width:100%;text-transform:uppercase;letter-spacing:.16em;font-size:.64rem}
+
+
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="bar">
+    <a class="wordmark" href="index.html" aria-label="Raima Naturals — home">
+      <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="1.1"/><circle cx="16" cy="16" r="9.5" stroke="currentColor" stroke-width=".9"/><path d="M16 6.5v19M6.5 16h19M9.3 9.3l13.4 13.4M22.7 9.3L9.3 22.7" stroke="currentColor" stroke-width=".55"/></svg>
+      <span class="wm-text">Raima Naturals<span class="wm-sub">East Himalaya</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="botanical-library.html" class="active">Botanical Library</a></li>
+      <li><a href="index.html#terroir">Terroir</a></li>
+      <li><a href="index.html#craft">Craft</a></li>
+      <li><a href="index.html#founding">Founding Years</a></li>
+    </ul>
+    <a class="nav-cta" href="contact.html">Request samples</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <svg class="ico-bars" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+      <svg class="ico-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mmenu">
+  <a class="active" href="botanical-library.html">Botanical Library</a>
+  <a href="index.html#terroir">Terroir</a>
+  <a href="index.html#craft">Craft</a>
+  <a href="index.html#founding">Founding Years</a>
+  <a class="mm-cta" href="contact.html">Request samples</a>
+</div>
+
+<!-- HERO -->
+<header class="page-hero">
+  <div class="inner">
+    <div class="crumbs rv"><a href="index.html">Raima Naturals</a><span>/</span><a href="botanical-library.html">Botanical Library</a><span>/</span>Satkora</div>
+    <span class="kicker rv">Entry iii · Aromatic &amp; medicinal</span>
+    <h1 class="rv">Satkora</h1>
+    <div class="sub rv"><em>Citrus macroptera</em> Montr. — Sylhet’s beef-curry citrus</div>
+    <p class="intro rv">A large, thick-rinded semi-wild citrus of the Northeast India–Sylhet hill country, grown for the intensely aromatic rind that defines a signature Sylheti dish. Its botany and its chemistry are already on the record. What we bring is the still, and the discipline to document every lot that leaves it.</p>
+    <dl class="hero-strip rv">
+      <div><dt>Genus</dt><dd>Citrus macroptera · Rutaceae</dd></div>
+      <div><dt>Native belt</dt><dd>Sylhet · Barak Valley · NE India hills</dd></div>
+      <div><dt>Part used</dt><dd>Thick aromatic rind</dd></div>
+      <div><dt>Olfactive</dt><dd>Citrus · spice · dry wood</dd></div>
+      <div><dt>Status</dt><dd>Cultivated · in development</dd></div>
+    </dl>
+  </div>
+</header>
+
+<!-- SPECIMEN PLATE -->
+<div class="container plate-wrap">
+  <figure class="plate rv">
+    <img src="satkora-fruit.jpg" alt="Large satkora fruit ripening on the branch, thick yellow-green rind" loading="lazy">
+    <figcaption><span class="fig">Plate I</span><span class="desc">Satkora ripening on the branch — large and thick-rinded, grown for its aromatic peel.</span></figcaption>
+  </figure>
+</div>
+
+<!-- AT A GLANCE -->
+<section class="section">
+  <div class="container">
+    <div class="sec-label rv"><span class="num">01</span><span class="rule"></span><span class="name">At a glance</span></div>
+    <div class="glance">
+      <div class="prose rv">
+        <p class="first">Satkora — also written shatkora, hatkora or hatkhora (Sylheti/Bengali শাতকরা/হাতকরা), and known to English-language botany as the Melanesian papeda or wild orange — is a large, thorny, semi-wild citrus from the old <em>papeda</em> lineage, a group that sits near the root of the entire <em>Citrus</em> family tree. Where the gondhoraj’s very identity is contested, satkora’s is not: essentially every peer-reviewed study out of Northeast India treats it as a single, settled species, <em>Citrus macroptera</em> Montr., named for the oversized “winged” petiole beneath each leaf.</p>
+        <p>What distinguishes it commercially is scale and use. The fruit runs 6–12.5 cm across — large for a citrus — with a thick, fleshy, intensely aromatic rind up to 1.75 cm deep that is the entire point of growing it. The pulp is dry and bitter by reputation, though measured juice content actually swings from 13% to 82% across wild seedling trees; what holds true across all of them is that nobody grows satkora for its juice. They grow it for the rind.</p>
+        <p>That rind already carries a proven market — it is a staple ingredient with a devoted diaspora behind it. What has not existed until now is the oil, distilled and documented at origin. That is the gap Raima was built to close.</p>
+      </div>
+      <aside class="spec rv">
+        <h4>Botanical fact-file</h4>
+        <dl>
+          <div><dt>Common names</dt><dd>Satkora, shatkora, hatkora</dd></div>
+          <div><dt>Family</dt><dd>Rutaceae</dd></div>
+          <div><dt>Genus</dt><dd><em>Citrus macroptera</em> Montr.</dd></div>
+          <div><dt>Fruit</dt><dd>6–12.5 cm · 145–620 g</dd></div>
+          <div><dt>Part used</dt><dd>Thick aromatic rind</dd></div>
+          <div><dt>Extraction</dt><dd>Hydrodistillation (peel)</dd></div>
+          <div><dt>Olfactive family</dt><dd>Citrus–spice–dry wood</dd></div>
+          <div><dt>Native belt</dt><dd>NE India, Sylhet, Melanesia</dd></div>
+          <div><dt>Conservation</dt><dd>Cultivated stock only</dd></div>
+          <div><dt>In Tripura</dt><dd>Grows in the Jampui Hills</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- OLFACTIVE -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="block" style="margin-top:0;border-top:none;padding-top:0">
+      <div class="sec-label rv"><span class="num">02</span><span class="rule"></span><span class="name">Olfactive profile</span></div>
+      <h2 class="rv">Bright citrus over a dry, spicy wood.</h2>
+      <div class="body rv">
+        <p>Satkora peel oil reads as citrus first — sharp, bright, immediately recognisable — then turns into something far less common: spicy, resinous and creamy, a dry citrus that echoes the sharpness of kaffir lime but sits softer and deeper underneath it. That warm, faintly bitter woody-spice register is genuinely rare in Western perfumery, and it is the reason to reach for this material rather than a conventional lime.</p>
+        <p>Worth saying clearly: satkora is not kaffir lime by another name. Kaffir lime leaf oil is built almost entirely around one molecule, citronellal (roughly 78%). Satkora’s leaf oil runs a completely different register — sabinene, β-pinene and linalool — while its peel oil is dominated instead by limonene. Two citrus fruits, two distinct chemical fingerprints.</p>
+      </div>
+      <div class="facets">
+        <div class="facet rv"><h4>Zest</h4><p>bright, citric, sharp</p></div>
+        <div class="facet rv"><h4>Spice</h4><p>warm, resinous, dry</p></div>
+        <div class="facet rv"><h4>Wood</h4><p>deep, kaffir-adjacent, softer</p></div>
+        <div class="facet rv"><h4>Bitter edge</h4><p>the signature curry note</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCIENCE (LAYERED) -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="block" style="margin-top:0">
+      <div class="sec-label rv"><span class="num">03</span><span class="rule"></span><span class="name">The GC-MS lens</span></div>
+      <h2 class="rv">A citrus the literature has already characterised.</h2>
+      <div class="body rv">
+        <p>Satkora is a botanical where the chemistry starts from a real, published chemotype rather than a blank page. Multiple independent GC-MS studies — from Northeast India, Mizoram, Bangladesh and beyond — agree the peel oil is limonene-dominant. They disagree, sometimes sharply, on how dominant: reported limonene content swings from roughly 23% to 87% depending on the study and the individual tree. That spread is real, not measurement error — satkora is still unselected, seed-grown germplasm, so no two trees are chemically identical. Selection is part of the work.</p>
+      </div>
+
+      <details class="science rv">
+        <summary>Published peel-oil studies — six independent sources <span class="pm"></span></summary>
+        <div class="panel">
+          <table class="gc-table">
+            <thead><tr><th>Study (origin)</th><th>Dominant peel-oil compounds</th><th class="pct">Limonene</th></tr></thead>
+            <tbody>
+              <tr><td class="cmp">Rana &amp; Blázquez 2012</td><td class="cls">Limonene, β-caryophyllene, geranial</td><td class="pct">55.3%</td></tr>
+              <tr><td class="cmp">Miah 2010 (var. <em>annamensis</em>)</td><td class="cls">Limonene, δ-cadinene, α-terpineol</td><td class="pct">73.5%</td></tr>
+              <tr><td class="cmp">Shourove 2025 (Bangladesh)</td><td class="cls">Limonene, isoeugenol, eugenol acetate</td><td class="pct">56.4%</td></tr>
+              <tr><td class="cmp">Dutta 2024 (NE India)</td><td class="cls">D-limonene, α-terpineol, linalool</td><td class="pct">86.8%</td></tr>
+              <tr><td class="cmp">Baccati / Luro 2021</td><td class="cls">Limonene, sabinene, linalool, terpinen-4-ol</td><td class="pct">53.8%</td></tr>
+              <tr><td class="cmp">Bhutia 2019 (NE India)</td><td class="cls">Limonene, α-terpineol, myrcene</td><td class="pct">22.7%</td></tr>
+            </tbody>
+          </table>
+          <p class="gc-note">Six independently authored GC-MS studies of <em>Citrus macroptera</em> peel oil [1–6]. Limonene is consistently the lead compound; its share is not — which is exactly why a single literature number can never stand in for a batch chromatogram.</p>
+        </div>
+      </details>
+
+      <details class="science rv">
+        <summary>Leaf oil — a different product entirely <span class="pm"></span></summary>
+        <div class="panel">
+          <table class="gc-table">
+            <thead><tr><th>Compound</th><th>Class</th><th>Note / role</th></tr></thead>
+            <tbody>
+              <tr><td class="cmp">Sabinene</td><td class="cls">Monoterpene</td><td>Green-woody; a leaf-oil lead compound</td></tr>
+              <tr><td class="cmp">β-Pinene</td><td class="cls">Monoterpene</td><td>Fresh, resinous</td></tr>
+              <tr><td class="cmp">Linalool</td><td class="cls">Alcohol</td><td>Floral lift</td></tr>
+              <tr><td class="cmp">Terpinen-4-ol</td><td class="cls">Alcohol</td><td>Peppery-warm facet</td></tr>
+              <tr><td class="cmp">Methyl anthranilate-type profile</td><td class="cls">Ester (species-variable)</td><td>Reported in a separate NE-India study; unusual for citrus leaf</td></tr>
+            </tbody>
+          </table>
+          <p class="gc-note">Leaf oil is not a weaker version of peel oil — it runs a different chemistry altogether [3][4], which makes peel and leaf two distinct products for two distinct buyers. The leaf stream comes off pruning biomass, and we distil it alongside the peel.</p>
+        </div>
+      </details>
+
+      <details class="science rv">
+        <summary>Oil yield — surprisingly method-driven <span class="pm"></span></summary>
+        <div class="panel">
+          <table class="gc-table">
+            <thead><tr><th>Method (basis)</th><th class="pct">Yield</th></tr></thead>
+            <tbody>
+              <tr><td class="cmp">Hydrodistillation, fresh peel</td><td class="pct">0.11–0.53%</td></tr>
+              <tr><td class="cmp">Hydrodistillation, dried peel</td><td class="pct">0.20%</td></tr>
+              <tr><td class="cmp">Hydrodistillation, fresh peel (higher-yield study)</td><td class="pct">1.43%</td></tr>
+              <tr><td class="cmp">Sonication-assisted hydrodistillation, optimised</td><td class="pct">1.87%</td></tr>
+              <tr><td class="cmp">Hydrodistillation, leaf</td><td class="pct">0.46%</td></tr>
+            </tbody>
+          </table>
+          <p class="gc-note">Published yields span roughly 0.11–1.9% w/w — a spread driven as much by extraction method as by biology [5]. One 2025 study lifted yield 3–6× over a conventional baseline using sonication-assisted hydrodistillation alone, before any change to the fruit. Process is a real lever on this botanical, and we treat it as one. No cold-press data exists for the species despite cold-press being the industry norm for citrus peel — open ground, and we intend to work it.</p>
+        </div>
+      </details>
+
+      <div class="callout rv">
+        <h4>How we handle these numbers</h4>
+        <p>The studies above map what <em>Citrus macroptera</em> can be across its range. They are a guide to the material — not a substitute for a specification.</p>
+        <p>Every lot we release is distilled from our own feedstock, characterised by GC-MS, and shipped with the chromatogram attached. The number that matters to a formulator is the one on the batch in front of them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOTANY & IDENTITY -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="block" style="margin-top:0">
+      <div class="sec-label rv"><span class="num">04</span><span class="rule"></span><span class="name">Botany &amp; identity</span></div>
+      <h2 class="rv">Settled as a species — unsettled as a rank.</h2>
+      <div class="body rv">
+        <p>Kew’s Plants of the World Online and GBIF’s taxonomic backbone list <em>Citrus macroptera</em> Montr. as a synonym of <em>Citrus hystrix</em> — true kaffir lime — at the level of formal nomenclature. Almost none of the applied agricultural or phytochemical literature follows that lumping: ICAR, NBPGR and UC Riverside’s citrus collection all treat it as its own species, because commercially and agriculturally it is a completely different thing from kaffir lime — a large, thick-rind curry fruit, not a small, bumpy leaf crop. We use <em>Citrus macroptera</em> Montr. because that is what the working science uses and it correctly identifies the plant. A technical buyer working from Kew’s taxonomy may raise the point; we would rather raise it first.</p>
+        <p>Three varieties are on record — <em>annamensis</em>, <em>kerrii</em> and <em>combara</em> — and it is specifically the <em>annamensis</em> oil that the literature ties to perfumery use, which is why variety selection is part of how we plant. Satkora should not be confused with true kaffir lime (<em>Citrus hystrix</em>, grown for leaf), with <em>Citrus micrantha</em> (a different ancestral papeda), or with <em>Citrus macrophylla</em> / alemow — an unrelated rootstock species that shares only a similar-sounding name.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CULINARY & CULTURAL -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="block" style="margin-top:0">
+      <div class="sec-label rv"><span class="num">05</span><span class="rule"></span><span class="name">Culinary &amp; cultural significance</span></div>
+      <h2 class="rv">An identity ingredient before it is anything else.</h2>
+      <div class="body rv">
+        <p>Long before satkora is an essential oil, it is a name that signals where a family is from. Beef shatkora — beef slow-cooked with warm spice and chunks of the citrus rind, which soften and release a sharp, faintly bitter perfume into the dish — is the signature preparation, alongside mutton, fish and dal versions across Sylheti, Bangladeshi and Northeast Indian kitchens. In the UK, where the British-Bangladeshi community runs the large majority of the country’s Indian restaurant trade, a “beef shatkora” on the menu is a specific, legible marker of Sylheti origin — not a generic curry-house flourish.</p>
+        <p>That cultural weight is the aromatic argument too. A material people already recognise by smell, across a whole cuisine, arrives in a perfumer’s hands with meaning attached. The rind’s food heritage is established and documented; the oil is the newer expression of the same fruit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TERROIR & SOURCING -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="block" style="margin-top:0">
+      <div class="sec-label rv"><span class="num">06</span><span class="rule"></span><span class="name">Terroir &amp; sourcing</span></div>
+      <h2 class="rv">A citrus of these hills.</h2>
+      <div class="body rv">
+        <p><em>Citrus macroptera</em> grows semi-wild across the belt we work in — the Jampui Hills of Tripura, the same range known for the state’s oranges, and on through Assam’s Barak Valley, Mizoram and Sylhet, the crop’s cultural heartland. It is a fruit of this hill country in the way few aromatic crops genuinely are: not introduced, not adapted, simply at home.</p>
+        <p>Wild populations are reported as declining under shifting cultivation and forest clearing. That settles our method rather than raising a question: our satkora comes from cultivated stock, planted and managed for oil, and every lot is traceable to the grove it came from. Wild-collected fruit has no place in a provenance house.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REFERENCES -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="block" style="margin-top:0">
+      <div class="sec-label rv"><span class="num">✦</span><span class="rule"></span><span class="name">Sources</span></div>
+      <ul class="refs rv">
+        <li>Rana &amp; Blázquez (2012), <em>Compositions of the Volatile Oils of Citrus macroptera and C. maxima</em>, Nat. Prod. Commun. <a href="https://journals.sagepub.com/doi/pdf/10.1177/1934578X1200701032">journals.sagepub.com</a></li>
+        <li>Nongalleima et al. (2017), <em>GC-MS metabolic profiling of essential oil of Citrus macroptera leaves and peel</em>, Int. J. Pharm. Pharm. Sci. <a href="https://journals.innovareacademics.in/index.php/ijpps/article/view/19593">journals.innovareacademics.in</a></li>
+        <li>Baccati, Luro et al. (2021), <em>Chemical Variability of Peel and Leaf Essential Oils in the Citrus Subgenus Papeda</em>, Plants (MDPI) 10(6):1117. <a href="https://www.mdpi.com/2223-7747/10/6/1117">mdpi.com</a></li>
+        <li>Shourove et al. (2025), <em>Optimization of sonication-assisted hydrodistillation for essential oil extraction from Citrus macroptera peel</em>, Applied Food Research. <a href="https://www.sciencedirect.com/science/article/pii/S2772502225007516">sciencedirect.com</a></li>
+        <li><em>Morphological attributes… of endangered Citrus macroptera Mont (Hatkora) from North-East India</em> (2025), Scientific Reports. <a href="https://www.nature.com/articles/s41598-025-27673-8">nature.com</a></li>
+        <li>Kew, Plants of the World Online — <em>Citrus macroptera</em> Montrouz. (listed as synonym of <em>C. hystrix</em>). <a href="https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:771970-1">powo.science.kew.org</a></li>
+        <li>Great British Chefs — <em>Ingredient Focus: Shatkora</em> &amp; Bangladeshi Beef Shatkora. <a href="https://www.greatbritishchefs.com/features/ingredient-focus-shatkora">greatbritishchefs.com</a></li>
+        <li>PIB, Government of India — <em>Consignment of Hatkora (citrus) from Mizoram exported</em> (Dec 2022). <a href="https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=1880468">pib.gov.in</a></li>
+      </ul>
+      <div class="mono-cta rv">
+        <a class="back" href="botanical-library.html">← Back to the Botanical Library</a>
+        <a class="btn btn-dark" href="contact.html?re=Satkora">Request fragrance samples</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="wordmark" href="index.html" style="text-decoration:none">
+          <svg viewBox="0 0 32 32" fill="none" aria-hidden="true" width="26" height="26"><circle cx="16" cy="16" r="15" stroke="#B5C84A" stroke-width="1.1"/><circle cx="16" cy="16" r="9.5" stroke="#B5C84A" stroke-width=".9"/><path d="M16 6.5v19M6.5 16h19M9.3 9.3l13.4 13.4M22.7 9.3L9.3 22.7" stroke="#B5C84A" stroke-width=".55"/></svg>
+          <span class="wm-text">Raima Naturals<span class="wm-sub">East Himalaya</span></span>
+        </a>
+        <p>A specialty aroma house of the East Himalaya.<br>Founding stage · Tripura, India.</p>
+        <p class="sig">Provenance, distilled.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="botanical-library.html">Botanical Library</a></li>
+          <li><a href="index.html#terroir">Terroir</a></li>
+          <li><a href="index.html#craft">Craft</a></li>
+          <li><a href="index.html#founding">Founding Years</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="contact.html">Request samples</a></li>
+          <li><a href="mailto:raimanaturals@gmail.com">raimanaturals@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+          <li><a href="shipping-policy.html">Shipping Policy</a></li>
+          <li><a href="return-policy.html">Return Policy</a></li>
+          <li><a href="refund-policy.html">Refund &amp; Cancellation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span class="legalname">Raima Naturals Private Limited — formerly known as Atkalapa Biotechnology LLP.</span>
+      <span class="row"><span>© 2026 Raima Naturals</span><span>Single origin · Small batch · Documented</span></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const nav=document.getElementById('nav');
+const burger=document.getElementById('burger'),mmenu=document.getElementById('mmenu');
+const onScroll=()=>nav.classList.toggle('solid',window.scrollY>48 && !mmenu.classList.contains('open'));
+onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+const setMenu=open=>{
+  mmenu.classList.toggle('open',open);
+  burger.classList.toggle('open',open);
+  nav.classList.toggle('menu-open',open);
+  document.body.classList.toggle('menu-open',open);
+  burger.setAttribute('aria-expanded',open);
+  burger.setAttribute('aria-label',open?'Close menu':'Open menu');
+  if(open){nav.classList.remove('solid');}else{onScroll();}
+};
+burger.addEventListener('click',()=>setMenu(!mmenu.classList.contains('open')));
+mmenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&mmenu.classList.contains('open'))setMenu(false);});
+const mqDesktop=window.matchMedia('(min-width:1001px)');
+mqDesktop.addEventListener('change',e=>{if(e.matches)setMenu(false);});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gondhoraj lime | Botanical Library — Raima Naturals</title>
+<meta name="description" content="A scientific and olfactive monograph on the gondhoraj lime (Citrus, Rutaceae): botanical identity, peel and leaf essential-oil chemistry through the GC-MS lens, aroma, culinary uses, and terroir.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%231C3327'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23B5C84A' stroke-width='1.2'/%3E%3Cpath d='M16 7v18M7 16h18M9.6 9.6l12.8 12.8M22.4 9.6L9.6 22.4' stroke='%23B5C84A' stroke-width='.8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#1C3327;--forest-deep:#12241B;--cream:#F5F1E6;--cream-2:#EDE7D6;
+  --ink:#20261F;--ink-soft:#4A5347;--chartreuse:#B5C84A;--copper:#9C5B33;
+  --hairline:rgba(32,38,31,.16);--hairline-light:rgba(245,241,230,.22);
+  --serif:"Fraunces",Georgia,serif;--text:"Newsreader",Georgia,serif;--sans:"Archivo",Helvetica,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:var(--text);font-size:1.075rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+::selection{background:var(--chartreuse);color:var(--forest-deep)}
+img{max-width:100%;display:block}
+a{color:inherit}
+body::after{content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.05;mix-blend-mode:multiply;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E")}
+.container{max-width:1120px;margin:0 auto;padding:0 clamp(1.4rem,4.5vw,2.6rem)}
+.section{padding:clamp(3.5rem,7vw,6rem) 0}
+.kicker{font-family:var(--sans);font-size:.7rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase}
+.sec-label{display:flex;align-items:center;gap:1rem;margin-bottom:clamp(1.6rem,4vw,2.4rem)}
+.sec-label .num{font-family:var(--serif);font-style:italic;font-weight:300;font-size:1.4rem;color:var(--copper)}
+.sec-label .rule{flex:0 0 3.2rem;height:1px;background:currentColor;opacity:.35}
+.sec-label .name{font-family:var(--sans);font-size:.68rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase}
+h1,h2,h3{font-family:var(--serif);font-weight:340;line-height:1.1;letter-spacing:-.01em}
+.lede{font-size:clamp(1.1rem,1.6vw,1.25rem);color:var(--ink-soft);max-width:36em}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.6,.2,1),transform .8s cubic-bezier(.2,.6,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .35s,color .35s,box-shadow .35s;color:var(--cream)}
+nav .bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.1rem clamp(1.4rem,4.5vw,2.6rem);max-width:1400px;margin:0 auto}
+nav.solid{background:var(--cream);color:var(--ink);box-shadow:0 1px 0 var(--hairline)}
+.wordmark{display:flex;align-items:center;gap:.65rem;text-decoration:none}
+.wordmark svg{width:26px;height:26px;flex:none}
+.wordmark .wm-text{font-family:var(--sans);font-weight:600;font-size:.82rem;letter-spacing:.26em;text-transform:uppercase;white-space:nowrap}
+.wordmark .wm-sub{display:block;font-weight:400;font-size:.56rem;letter-spacing:.3em;opacity:.75;margin-top:.15rem}
+.nav-links{display:flex;align-items:center;gap:1.7rem;list-style:none}
+.nav-links a{font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;opacity:.85;transition:opacity .2s}
+.nav-links a:hover,.nav-links a.active{opacity:1}
+.nav-links a.active{color:var(--chartreuse)}
+nav.solid .nav-links a.active{color:var(--copper)}
+.nav-cta{font-family:var(--sans);font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border:1px solid currentColor;padding:.6rem 1.1rem;border-radius:2rem;transition:background .25s,color .25s;white-space:nowrap}
+nav:not(.solid) .nav-cta:hover{background:var(--cream);color:var(--forest)}
+nav.solid .nav-cta:hover{background:var(--forest);color:var(--cream);border-color:var(--forest)}
+.burger{display:none;background:none;border:none;color:inherit;cursor:pointer;padding:.4rem}
+.burger svg{width:26px;height:26px;display:block}
+.mobile-menu{display:none;position:fixed;inset:0;z-index:99;background:var(--forest-deep);color:var(--cream);padding:7rem 2rem 2rem;flex-direction:column;gap:1.4rem}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-family:var(--serif);font-size:1.6rem;text-decoration:none;border-bottom:1px solid var(--hairline-light);padding-bottom:1rem}
+.nav-links a{white-space:nowrap}
+nav.menu-open{background:transparent;box-shadow:none;color:var(--cream)}
+body.menu-open{overflow:hidden}
+.burger .ico-x{display:none}
+.burger.open .ico-bars{display:none}
+.burger.open .ico-x{display:block}
+.mobile-menu{overflow-y:auto;overscroll-behavior:contain}
+.mobile-menu a.active{color:var(--chartreuse)}
+.mobile-menu .mm-cta{align-self:flex-start;margin-top:.4rem;border-bottom:none;padding:.95rem 1.7rem;
+background:var(--cream);color:var(--forest-deep);border-radius:2rem;
+font-family:var(--sans);font-size:.76rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+@media (max-width:1080px){
+  .nav-links{gap:1.15rem}
+  .nav-links a{font-size:.68rem;letter-spacing:.1em}
+  .nav-cta{padding:.55rem .95rem;font-size:.66rem;letter-spacing:.1em}
+}
+@media (max-width:1000px){.nav-links,.nav-cta{display:none}.burger{display:block}}
+.page-hero{position:relative;background:var(--forest);color:var(--cream);padding:clamp(7.5rem,15vw,10rem) 0 clamp(3rem,6vw,4.5rem);overflow:hidden}
+.page-hero::before{content:"";position:absolute;inset:0;opacity:.6;pointer-events:none;
+background:radial-gradient(120% 100% at 88% 0%,rgba(181,200,74,.22),transparent 55%),radial-gradient(90% 90% at 0% 100%,rgba(156,91,51,.18),transparent 60%)}
+.page-hero .inner{position:relative;max-width:1120px;margin:0 auto;padding:0 clamp(1.4rem,4.5vw,2.6rem)}
+.crumbs{margin-bottom:1.5rem;font-family:var(--sans);font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,241,230,.6)}
+.crumbs a{text-decoration:none;color:rgba(245,241,230,.8)}
+.crumbs a:hover{color:var(--chartreuse)}
+.crumbs span{padding:0 .45rem;color:rgba(245,241,230,.4)}
+.page-hero .kicker{color:var(--chartreuse);margin-bottom:1.1rem;display:block}
+.page-hero h1{font-size:clamp(2.6rem,6.4vw,4.6rem)}
+.page-hero .sub{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.1rem,2vw,1.5rem);color:rgba(245,241,230,.82);margin-top:.6rem}
+.page-hero .intro{margin-top:1.5rem;font-size:clamp(1.05rem,1.6vw,1.25rem);max-width:38em;color:rgba(245,241,230,.9)}
+.hero-strip{margin-top:clamp(2rem,4vw,2.8rem);border-top:1px solid var(--hairline-light);padding-top:1.3rem;display:flex;flex-wrap:wrap;gap:1.4rem 2.4rem}
+.hero-strip div{min-width:8rem}
+.hero-strip dt{font-family:var(--sans);font-size:.6rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,241,230,.55);margin-bottom:.3rem}
+.hero-strip dd{font-family:var(--sans);font-size:.82rem;letter-spacing:.02em;color:var(--cream)}
+.plate-wrap{padding:clamp(2rem,4.5vw,3.2rem) 0 0}
+.plate{border:1px solid var(--ink);border-radius:.45rem;overflow:hidden;background:var(--cream)}
+.plate img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}
+.plate figcaption{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 1.2rem;padding:.9rem 1.3rem;border-top:1px solid var(--hairline)}
+.plate .fig{font-family:var(--sans);font-size:.62rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--copper);white-space:nowrap}
+.plate .desc{font-family:var(--serif);font-style:italic;font-weight:300;font-size:.95rem;color:var(--ink-soft)}
+.glance{display:grid;grid-template-columns:1.45fr .9fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+@media (max-width:860px){.glance{grid-template-columns:1fr}}
+.prose{max-width:40em}
+.prose p+p{margin-top:1.1rem}
+.prose .first::first-letter{font-family:var(--serif);font-size:3.1em;float:left;line-height:.82;padding:.05em .12em 0 0;color:var(--copper)}
+.spec{border:1px solid var(--ink);border-radius:.45rem;padding:1.5rem;background:var(--cream);position:sticky;top:6rem}
+.spec h4{font-family:var(--sans);font-size:.64rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--forest)}
+.spec dl{display:grid;gap:0;margin-top:1rem}
+.spec dl>div{display:flex;justify-content:space-between;gap:1.2rem;border-top:1px solid var(--hairline);padding:.7rem 0;font-family:var(--sans);font-size:.72rem;letter-spacing:.02em}
+.spec dt{color:var(--ink-soft);text-transform:uppercase;letter-spacing:.1em;font-size:.62rem;font-weight:600;padding-top:.15rem;flex:0 0 40%}
+.spec dd{font-weight:500;text-align:right;color:var(--ink)}
+.spec dd em{font-style:italic;color:var(--copper);font-family:var(--serif)}
+@media (max-width:860px){.spec{position:static}}
+.facets{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.6rem}
+.facet{border:1px solid var(--hairline);padding:1.2rem 1.1rem;border-radius:.35rem;background:var(--cream)}
+.facet h4{font-family:var(--sans);font-size:.62rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--copper);margin-bottom:.5rem}
+.facet p{font-size:.9rem;color:var(--ink-soft);font-style:italic}
+@media (max-width:720px){.facets{grid-template-columns:1fr 1fr}}
+.block{border-top:1px solid var(--hairline);padding-top:clamp(2rem,4vw,3rem);margin-top:clamp(2.6rem,5vw,4rem)}
+.block h2{font-size:clamp(1.6rem,3.4vw,2.3rem);max-width:18em}
+.block .body{margin-top:1.3rem;max-width:44em}
+.block .body p+p{margin-top:1.1rem}
+.science{margin-top:1.5rem;border:1px solid var(--hairline);border-radius:.5rem;background:var(--cream);overflow:hidden}
+.science+.science{margin-top:.9rem}
+.science>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.1rem 1.3rem;font-family:var(--sans);font-size:.73rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--forest);transition:background .2s}
+.science>summary:hover{background:var(--cream-2)}
+.science>summary::-webkit-details-marker{display:none}
+.science>summary .pm{position:relative;width:14px;height:14px;flex:none}
+.science>summary .pm::before,.science>summary .pm::after{content:"";position:absolute;background:var(--copper);transition:transform .25s}
+.science>summary .pm::before{top:6px;left:0;width:14px;height:2px}
+.science>summary .pm::after{top:0;left:6px;width:2px;height:14px}
+.science[open]>summary .pm::after{transform:scaleY(0)}
+.science[open]>summary{border-bottom:1px solid var(--hairline);background:var(--cream-2)}
+.science .panel{padding:1.1rem 1.3rem 1.5rem;overflow-x:auto}
+.gc-table{width:100%;border-collapse:collapse;font-size:.9rem;min-width:34rem}
+.gc-table th{font-family:var(--sans);font-size:.58rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);text-align:left;padding:.55rem .7rem;border-bottom:1.5px solid var(--ink)}
+.gc-table td{padding:.6rem .7rem;border-bottom:1px solid var(--hairline);vertical-align:top;color:var(--ink)}
+.gc-table tr:last-child td{border-bottom:none}
+.gc-table .cmp{font-weight:600}
+.gc-table .cls{font-family:var(--sans);font-size:.7rem;letter-spacing:.03em;color:var(--ink-soft);white-space:nowrap}
+.gc-table .pct{font-family:var(--sans);font-weight:600;color:var(--copper);white-space:nowrap;text-align:right}
+.gc-note{margin-top:.9rem;font-size:.82rem;font-style:italic;color:var(--ink-soft);max-width:44em}
+.callout{margin-top:1.5rem;border-left:3px solid var(--chartreuse);background:var(--cream-2);padding:1.2rem 1.4rem;border-radius:0 .4rem .4rem 0;max-width:44em}
+.callout h4{font-family:var(--sans);font-size:.64rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--forest);margin-bottom:.5rem}
+.callout p{font-size:.95rem;color:var(--ink-soft)}
+.callout p+p{margin-top:.7rem}
+.refs{margin-top:1.2rem;max-width:46em;display:grid;gap:.65rem;list-style:none;counter-reset:r}
+.refs li{position:relative;padding-left:1.8rem;font-size:.84rem;color:var(--ink-soft);line-height:1.5}
+.refs li::before{counter-increment:r;content:counter(r);position:absolute;left:0;top:0;font-family:var(--sans);font-size:.62rem;font-weight:600;color:var(--copper);border:1px solid var(--hairline);border-radius:50%;width:1.2rem;height:1.2rem;display:flex;align-items:center;justify-content:center}
+.refs a{color:var(--copper);text-decoration:none;border-bottom:1px solid var(--hairline)}
+.refs a:hover{color:var(--forest)}
+.btn{font-family:var(--sans);font-size:.74rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;padding:.9rem 1.6rem;border-radius:2rem;transition:transform .2s,background .25s,color .25s;display:inline-block}
+.btn:active{transform:scale(.97)}
+.btn-dark{background:var(--forest);color:var(--cream)}
+.btn-dark:hover{background:var(--copper)}
+.mono-cta{margin-top:clamp(2.6rem,5vw,4rem);border-top:1px solid var(--hairline);padding-top:2.2rem;display:flex;flex-wrap:wrap;gap:1.2rem 2rem;align-items:center;justify-content:space-between}
+.mono-cta .back{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--forest);display:inline-flex;align-items:center;gap:.5rem}
+.mono-cta .back:hover{color:var(--copper)}
+footer{background:var(--forest-deep);color:var(--cream);padding:clamp(3.5rem,7vw,5rem) 0 2.2rem}
+.foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2.2rem;padding-bottom:2.6rem;border-bottom:1px solid var(--hairline-light)}
+.foot-brand p{margin-top:1rem;font-size:.98rem;color:rgba(245,241,230,.8);max-width:24em}
+.foot-brand .sig{font-style:italic;color:var(--chartreuse);margin-top:.5rem}
+.foot-col h5{font-family:var(--sans);font-size:.66rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:rgba(245,241,230,.6);margin-bottom:1rem}
+.foot-col ul{list-style:none;display:grid;gap:.6rem}
+.foot-col a{text-decoration:none;font-size:.95rem;color:rgba(245,241,230,.88)}
+.foot-col a:hover{color:var(--chartreuse)}
+.foot-base{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;padding-top:1.6rem;font-family:var(--sans);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,241,230,.55)}
+
+/* ---------- footer layout with legal column ---------- */
+.foot-brand{flex:1 1 20rem;min-width:16rem}
+.foot-col{flex:0 1 auto;min-width:9rem}
+.foot-base{flex-direction:column;align-items:flex-start;gap:.55rem;text-transform:none;letter-spacing:.09em;font-size:.66rem;line-height:1.6}
+.foot-base .legalname{color:rgba(245,241,230,.72)}
+.foot-base .row{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;width:100%;text-transform:uppercase;letter-spacing:.16em;font-size:.64rem}
+
+
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="bar">
+    <a class="wordmark" href="index.html" aria-label="Raima Naturals — home">
+      <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="1.1"/><circle cx="16" cy="16" r="9.5" stroke="currentColor" stroke-width=".9"/><path d="M16 6.5v19M6.5 16h19M9.3 9.3l13.4 13.4M22.7 9.3L9.3 22.7" stroke="currentColor" stroke-width=".55"/></svg>
+      <span class="wm-text">Raima Naturals<span class="wm-sub">East Himalaya</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="botanical-library.html" class="active">Botanical Library</a></li>
+      <li><a href="index.html#terroir">Terroir</a></li>
+      <li><a href="index.html#craft">Craft</a></li>
+      <li><a href="index.html#founding">Founding Years</a></li>
+    </ul>
+    <a class="nav-cta" href="contact.html">Request samples</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <svg class="ico-bars" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+      <svg class="ico-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mmenu">
+  <a class="active" href="botanical-library.html">Botanical Library</a>
+  <a href="index.html#terroir">Terroir</a>
+  <a href="index.html#craft">Craft</a>
+  <a href="index.html#founding">Founding Years</a>
+  <a class="mm-cta" href="contact.html">Request samples</a>
+</div>
+
+<!-- HERO -->
+<header class="page-hero">
+  <div class="inner">
+    <div class="crumbs rv"><a href="index.html">Raima Naturals</a><span>/</span><a href="botanical-library.html">Botanical Library</a><span>/</span>Gondhoraj</div>
+    <span class="kicker rv">Entry ii · Aromatic &amp; medicinal</span>
+    <h1 class="rv">Gondhoraj</h1>
+    <div class="sub rv"><em>Citrus</em> × <em>limonia</em> (aff.) — Bengal’s king of aroma</div>
+    <p class="intro rv">A semi-wild aromatic lime of the India–Bangladesh hill country, prized for a rind and leaf so fragrant they can carry a room. Grown for perfume, not pulp — and the first of its kind to be distilled and documented at origin.</p>
+    <dl class="hero-strip rv">
+      <div><dt>Genus</dt><dd>Citrus · Rutaceae</dd></div>
+      <div><dt>Native belt</dt><dd>Bengal · Sylhet · NE India hills</dd></div>
+      <div><dt>Part used</dt><dd>Rind &amp; leaf</dd></div>
+      <div><dt>Olfactive</dt><dd>Bright citrus · green · floral</dd></div>
+      <div><dt>Status</dt><dd>Cultivated · signature botanical</dd></div>
+    </dl>
+  </div>
+</header>
+
+<!-- SPECIMEN PLATE -->
+<div class="container plate-wrap">
+  <figure class="plate rv">
+    <img src="gondhoraj-fruit.jpg" alt="A harvested pile of small, glossy, intensely aromatic gondhoraj limes" loading="lazy">
+    <figcaption><span class="fig">Plate I</span><span class="desc">Freshly harvested gondhoraj — small, glossy-skinned, prized for its fragrant rind.</span></figcaption>
+  </figure>
+</div>
+
+<!-- AT A GLANCE -->
+<section class="section">
+  <div class="container">
+    <div class="sec-label rv"><span class="num">01</span><span class="rule"></span><span class="name">At a glance</span></div>
+    <div class="glance">
+      <div class="prose rv">
+        <p class="first">The gondhoraj lebu — <em>gondho-raj</em>, literally “king of fragrance” — is a green, thick-skinned aromatic lime of Bengal and the surrounding hill country. Bengalis rank it above the ordinary lime the way a wine grower ranks a cru above a table grape: it is not simply sour, it is <em>perfumed</em>, with a scent potent enough to fill a kitchen from a single zested fruit.</p>
+        <p>What makes it valuable to an aroma house is exactly what its name promises. The fruit is prized for its intensely fragrant rind and its kaffir-like aromatic leaf far more than for its modest juice. That puts its worth in the volatile oils of peel and leaf — the two things a distiller can actually capture.</p>
+        <p>It is a botanical that has been hiding in plain sight: beloved in the kitchen, celebrated in craft gin, and never properly distilled and characterised at origin. That is the work we were built to do, and this is our signature botanical.</p>
+      </div>
+      <aside class="spec rv">
+        <h4>Botanical fact-file</h4>
+        <dl>
+          <div><dt>Common names</dt><dd>Gondhoraj lebu, gandharaj</dd></div>
+          <div><dt>Family</dt><dd>Rutaceae</dd></div>
+          <div><dt>Genus</dt><dd><em>Citrus</em></dd></div>
+          <div><dt>Identity</dt><dd>Debated — <em>limonia</em> group</dd></div>
+          <div><dt>Part used</dt><dd>Rind &amp; leaf</dd></div>
+          <div><dt>Extraction</dt><dd>Cold-press (peel); steam (leaf)</dd></div>
+          <div><dt>Olfactive family</dt><dd>Bright citrus / green</dd></div>
+          <div><dt>Native belt</dt><dd>Bengal, Sylhet, NE India</dd></div>
+          <div><dt>Conservation</dt><dd>Cultivated · not threatened</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- OLFACTIVE -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="block" style="margin-top:0;border-top:none;padding-top:0">
+      <div class="sec-label rv"><span class="num">02</span><span class="rule"></span><span class="name">Olfactive profile</span></div>
+      <h2 class="rv">A bright green blade of lime, with a floral tail.</h2>
+      <div class="body rv">
+        <p>Where agarwood is a base note, gondhoraj is a top note — fresh, sharp and diffusive, the kind of brightness that lifts and opens a composition. The signature is a sparkling green lime zest laid over kaffir-leaf and lemongrass facets, with a cool, quiet floral bloom running underneath that sets it apart from an ordinary lime.</p>
+        <p>It is a natural fit for citrus and cologne structures, gin and beverage flavour, and any brief that wants a living, green citrus rather than a flat “lemon.” Like all citrus top notes its beauty is fleeting, which is exactly why we distil within hours of harvest rather than days.</p>
+      </div>
+      <div class="facets">
+        <div class="facet rv"><h4>Zest</h4><p>sparkling, sharply green, citric</p></div>
+        <div class="facet rv"><h4>Leaf</h4><p>kaffir-adjacent, tea-green</p></div>
+        <div class="facet rv"><h4>Bloom</h4><p>a cool, quiet floral trail</p></div>
+        <div class="facet rv"><h4>Body</h4><p>lemongrass, fresh, lifting</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCIENCE (LAYERED) -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="block" style="margin-top:0">
+      <div class="sec-label rv"><span class="num">03</span><span class="rule"></span><span class="name">The GC-MS lens</span></div>
+      <h2 class="rv">Two oils from one fruit — and they read completely differently.</h2>
+      <div class="body rv">
+        <p>A citrus like the gondhoraj yields two quite distinct materials. The <strong>cold-pressed peel oil</strong> is dominated by the monoterpene <strong>limonene</strong>, carried by β-pinene, γ-terpinene and sabinene, with small but aroma-defining amounts of the lemony aldehyde <strong>citral</strong> (neral + geranial) and sweet esters. The <strong>leaf (petitgrain) oil</strong> tells a different story: far less limonene, and much more <strong>citronellal, citronellol and linalool</strong> — the same aldehyde-and-alcohol register that gives kaffir-lime leaf its character, which fits the gondhoraj’s famously aromatic foliage.</p>
+        <p>No published GC-MS of gondhoraj oil distilled at origin exists. We are generating the first. The tables below are reference profiles from closely related citrus peel and leaf oils, shown so you can read the chemical shape — the gondhoraj numbers will be ours.</p>
+      </div>
+
+      <details class="science rv">
+        <summary>Cold-pressed peel oil — reference profile <span class="pm"></span></summary>
+        <div class="panel">
+          <table class="gc-table">
+            <thead><tr><th>Compound</th><th>Class</th><th class="pct">Typical</th></tr></thead>
+            <tbody>
+              <tr><td class="cmp">Limonene</td><td class="cls">Monoterpene</td><td class="pct">~48–95%</td></tr>
+              <tr><td class="cmp">β-Pinene</td><td class="cls">Monoterpene</td><td class="pct">up to ~15%</td></tr>
+              <tr><td class="cmp">γ-Terpinene</td><td class="cls">Monoterpene</td><td class="pct">variable</td></tr>
+              <tr><td class="cmp">Sabinene</td><td class="cls">Monoterpene</td><td class="pct">minor</td></tr>
+              <tr><td class="cmp">Citral (neral + geranial)</td><td class="cls">Aldehyde</td><td class="pct">minor · key odour</td></tr>
+              <tr><td class="cmp">Neryl &amp; geranyl acetate</td><td class="cls">Ester</td><td class="pct">trace–minor</td></tr>
+              <tr><td class="cmp">β-Caryophyllene</td><td class="cls">Sesquiterpene</td><td class="pct">trace</td></tr>
+            </tbody>
+          </table>
+          <p class="gc-note">Reference ranges for lemon/lime cold-pressed peel oils [4]. Limonene sets the fresh citrus body; the small citral fraction carries much of the recognisable “lemon-lime” signal. Phytochemicals specifically reported for gondhoraj — β-pinene, limonene and β-caryophyllene — are consistent with this profile [2].</p>
+        </div>
+      </details>
+
+      <details class="science rv">
+        <summary>Leaf / petitgrain oil — reference profile <span class="pm"></span></summary>
+        <div class="panel">
+          <table class="gc-table">
+            <thead><tr><th>Compound</th><th>Class</th><th>Note / role</th></tr></thead>
+            <tbody>
+              <tr><td class="cmp">Citronellal</td><td class="cls">Aldehyde</td><td>Signature kaffir/gondhoraj-leaf note; fresh, green, rosy</td></tr>
+              <tr><td class="cmp">Citronellol</td><td class="cls">Alcohol</td><td>Soft, rosy citrus</td></tr>
+              <tr><td class="cmp">Linalool</td><td class="cls">Alcohol</td><td>Floral, fresh</td></tr>
+              <tr><td class="cmp">Sabinene</td><td class="cls">Monoterpene</td><td>Green-woody lift</td></tr>
+              <tr><td class="cmp">Citral, nerol, geraniol</td><td class="cls">Aldehyde / alcohols</td><td>Lemony, floral facets</td></tr>
+              <tr><td class="cmp">Limonene</td><td class="cls">Monoterpene</td><td>Present but lower than in peel</td></tr>
+            </tbody>
+          </table>
+          <p class="gc-note">Citrus leaf/petitgrain oils shift away from limonene toward citronellal, citronellol and linalool [4]; kaffir-lime leaf is the classic citronellal-rich reference for an aromatic-lime foliage of this kind. We measure the exact proportions for gondhoraj leaf on our own material, harvest window by harvest window.</p>
+        </div>
+      </details>
+
+      <div class="callout rv">
+        <h4>How we handle these numbers</h4>
+        <p>The tables above are reference values from related citrus, labelled as such. They map the chemical territory — they are not a specification, and we would not pass off another fruit’s data as this one’s.</p>
+        <p>The absence of an origin GC-MS for a fruit this famous is a white space, and closing it is the founding work of this house: cold-press the peel, steam-distil the leaf, publish real chromatograms. Every lot ships with its own.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IDENTITY -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="block" style="margin-top:0">
+      <div class="sec-label rv"><span class="num">04</span><span class="rule"></span><span class="name">Botany &amp; identity</span></div>
+      <h2 class="rv">A citrus whose name is settled — and whose species is not.</h2>
+      <div class="body rv">
+        <p>Everyone agrees the gondhoraj is a <em>Citrus</em> in the family Rutaceae. Past that, botanists disagree. It is most often tied to the Rangpur / <em>Citrus</em> × <em>limonia</em> group — a mandarin-and-lime hybrid lineage — while its intensely aromatic leaf reads as kaffir-adjacent (<em>Citrus</em> × <em>hystrix</em>), and at least one source files it under <em>Citrus macroptera</em>, a classification we reject: that name belongs to the satkora used in Sylheti beef curries, a different fruit entirely.</p>
+        <p>Resolving that question is part of the work. A documented chemical fingerprint, and in time genetic characterisation, is what turns a beloved regional fruit into a material a formulator can specify — and it is one of the reasons this house exists rather than simply trading what already moves.</p>
+      </div>
+      <div class="callout rv" style="border-left-color:var(--copper)">
+        <h4>A note on the juice</h4>
+        <p>The gondhoraj is valued first and foremost for its <em>fragrant rind and leaf</em>, with a modest but intensely aromatic juice used liberally across Bengali cooking and drinks. It is not a juiceless fruit, and it is not a juice crop — its worth sits in the peel and the foliage, which is exactly where we work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- USES -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="block" style="margin-top:0">
+      <div class="sec-label rv"><span class="num">05</span><span class="rule"></span><span class="name">Uses</span></div>
+      <h2 class="rv">Kitchen, glass, and skin.</h2>
+      <div class="body rv">
+        <p>In the kitchen the gondhoraj is a Bengali and Bangladeshi essential — its zest and leaf lift dal, fish, meat, chutneys and street food, and its juice defines drinks from <em>gondhoraj ghol</em> to modern cocktails. The craft-drinks world has taken note too: this aromatic-lime type is the lineage behind Rangpur-style gins.</p>
+        <p>Beyond flavour, it carries the usual citrus virtues — a good dose of vitamin C and the antioxidant and antimicrobial activity typical of citrus peel oils — and it appears in skin and wellness formulations for its fragrance and freshness. Our work moves it from the kitchen into fine fragrance and premium flavour as a documented, single-origin material.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TERROIR -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="block" style="margin-top:0">
+      <div class="sec-label rv"><span class="num">06</span><span class="rule"></span><span class="name">Terroir &amp; sourcing</span></div>
+      <h2 class="rv">A fruit that refuses to leave home.</h2>
+      <div class="body rv">
+        <p>The gondhoraj’s heartland is the hill country where India meets Bangladesh — Sylhet and the Chittagong hills, across Bengal, and into the Northeast Indian tracts that include Tripura. It grows poorly when taken far from this belt, which is part of the romance and, more usefully, part of the moat: a genuinely regional botanical is hard for a distant competitor to replicate.</p>
+        <p>So we extract it where it already belongs. We cultivate for oil, harvest in season, and distil peel and leaf within hours — turning a beloved local fruit into the first properly documented gondhoraj aroma material. Each lot is traceable to its grove and its harvest window, and this monograph carries those numbers as they are made.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REFERENCES -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="block" style="margin-top:0">
+      <div class="sec-label rv"><span class="num">✦</span><span class="rule"></span><span class="name">Sources</span></div>
+      <ul class="refs rv">
+        <li><em>Is the Gondhoraj a Lemon?</em> — botanical identity debate. <a href="https://gondhoraj.com/about/is-the-gondhoraj-a-lemon/">gondhoraj.com</a></li>
+        <li>Gondhoraj Lebu — profile, characteristics, reported phytochemicals (β-pinene, limonene, β-caryophyllene). Specialty Produce. <a href="https://specialtyproduce.com/produce/Gondhoraj_Lebu_23593.php">specialtyproduce.com</a></li>
+        <li><em>King of Lemons: the Gondhoraj Lebu</em> — juice, aroma, terroir, Rangpur link. The Better India. <a href="https://thebetterindia.com/186253/gondhoraj-lebu-bengal-fragrance-king-of-lemons-food-india/">thebetterindia.com</a></li>
+        <li><em>Volatile Compounds in Citrus Essential Oils: A Comprehensive Review</em> — reference peel &amp; leaf oil composition. Frontiers in Plant Science (2019). <a href="https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2019.00012/full">frontiersin.org</a></li>
+        <li>Gondhoraj / <em>Citrus</em> × <em>limonia</em> horticultural classification. Veliyath Gardens. <a href="https://veliyathgarden.com/products/gondhoraj-lemon-citrus-limonia">veliyathgarden.com</a></li>
+      </ul>
+      <div class="mono-cta rv">
+        <a class="back" href="botanical-library.html">← Back to the Botanical Library</a>
+        <a class="btn btn-dark" href="contact.html?re=Gondhoraj%20lime">Request fragrance samples</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="wordmark" href="index.html" style="text-decoration:none">
+          <svg viewBox="0 0 32 32" fill="none" aria-hidden="true" width="26" height="26"><circle cx="16" cy="16" r="15" stroke="#B5C84A" stroke-width="1.1"/><circle cx="16" cy="16" r="9.5" stroke="#B5C84A" stroke-width=".9"/><path d="M16 6.5v19M6.5 16h19M9.3 9.3l13.4 13.4M22.7 9.3L9.3 22.7" stroke="#B5C84A" stroke-width=".55"/></svg>
+          <span class="wm-text">Raima Naturals<span class="wm-sub">East Himalaya</span></span>
+        </a>
+        <p>A specialty aroma house of the East Himalaya.<br>Founding stage · Tripura, India.</p>
+        <p class="sig">Provenance, distilled.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="botanical-library.html">Botanical Library</a></li>
+          <li><a href="index.html#terroir">Terroir</a></li>
+          <li><a href="index.html#craft">Craft</a></li>
+          <li><a href="index.html#founding">Founding Years</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="contact.html">Request samples</a></li>
+          <li><a href="mailto:raimanaturals@gmail.com">raimanaturals@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+          <li><a href="shipping-policy.html">Shipping Policy</a></li>
+          <li><a href="return-policy.html">Return Policy</a></li>
+          <li><a href="refund-policy.html">Refund &amp; Cancellation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span class="legalname">Raima Naturals Private Limited — formerly known as Atkalapa Biotechnology LLP.</span>
+      <span class="row"><span>© 2026 Raima Naturals</span><span>Single origin · Small batch · Documented</span></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const nav=document.getElementById('nav');
+const burger=document.getElementById('burger'),mmenu=document.getElementById('mmenu');
+const onScroll=()=>nav.classList.toggle('solid',window.scrollY>48 && !mmenu.classList.contains('open'));
+onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+const setMenu=open=>{
+  mmenu.classList.toggle('open',open);
+  burger.classList.toggle('open',open);
+  nav.classList.toggle('menu-open',open);
+  document.body.classList.toggle('menu-open',open);
+  burger.setAttribute('aria-expanded',open);
+  burger.setAttribute('aria-label',open?'Close menu':'Open menu');
+  if(open){nav.classList.remove('solid');}else{onScroll();}
+};
+burger.addEventListener('click',()=>setMenu(!mmenu.classList.contains('open')));
+mmenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&mmenu.classList.contains('open'))setMenu(false);});
+const mqDesktop=window.matchMedia('(min-width:1001px)');
+mqDesktop.addEventListener('change',e=>{if(e.matches)setMenu(false);});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
