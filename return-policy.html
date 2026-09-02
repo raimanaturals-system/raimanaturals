@@ -206,6 +206,93 @@ footer{background:var(--forest-deep);color:var(--cream);padding:clamp(3.5rem,7vw
 @media (max-width:620px){.doc dl.facts dt{flex:1 1 100%}}
 
 
+
+/* ============================================================
+   MOBILE REFINEMENT
+   The uppercase Archivo utility type was scaled for desktop,
+   where .6-.74rem reads as refined small caps. On a phone the
+   same values land at 9-12px, which is why the page felt
+   cramped. Everything below lifts that layer only - the
+   display and body type already scale with clamp().
+   ============================================================ */
+@media (max-width:640px){
+  body{font-size:1.05rem;line-height:1.66}
+  .burger{width:44px;height:44px;display:flex;align-items:center;justify-content:center;margin-right:-.4rem}
+  /* breadcrumbs, form labels and pill links - size and hit area */
+  .crumbs{font-size:.78rem}
+  .crumbs a{display:inline-block;padding:.34rem 0}
+  .doc-nav a{font-size:.8rem;padding:.7rem 1.15rem}
+  .fld label{font-size:.8rem}
+  .mono-cta .back{padding:.55rem 0}
+  .aside .em a{display:inline-block;padding:.3rem 0}
+  .consent a{padding:.32rem 0}
+  .foot-brand .wordmark{display:inline-flex;padding:.3rem 0}
+
+  /* utility / label type */
+  .kicker{font-size:.76rem;letter-spacing:.18em}
+  .sec-label .name{font-size:.76rem}
+  .sec-label .num{font-size:.95rem}
+  .wordmark .wm-sub{font-size:.6rem}
+  .hero-base{font-size:.72rem;letter-spacing:.12em}
+  .marquee span{font-size:.74rem}
+  .value h3,.step h3,.t-col h3{font-size:.8rem}
+  .facet h4{font-size:.76rem;letter-spacing:.2em}
+  .facet p{font-size:1rem}
+  .oud-fig figcaption{font-size:.68rem;letter-spacing:.16em}
+  .map-meta div{font-size:.74rem}
+  .formats .note{font-size:1rem}
+
+  /* buttons and chips - size and tap area */
+  .btn{font-size:.82rem;letter-spacing:.12em;padding:1.05rem 1.7rem}
+  .hero-ctas{gap:.8rem}
+  .chip{font-size:.82rem;padding:.65rem 1.1rem}
+  .chip em{font-size:.62rem}
+  .mobile-menu .mm-cta{font-size:.84rem;padding:1.05rem 1.8rem}
+  form.rq button{font-size:.82rem;padding:1.1rem 2rem;width:100%;text-align:center}
+
+  /* footer - readable, and links big enough to hit */
+  .foot-col h5{font-size:.74rem}
+  .foot-col a{font-size:1.02rem;display:inline-block;padding:.42rem 0}
+  .foot-col ul{gap:.1rem}
+  .foot-brand p{font-size:1.02rem}
+  .foot-base{font-size:.72rem;line-height:1.7}
+  .foot-base .row{font-size:.68rem}
+
+  /* library cards */
+  .crop-card .status{font-size:.64rem}
+  .crop-card .fam,.crop-card .tag{font-size:.72rem}
+  .crop-card .open{font-size:.78rem}
+
+  /* monograph pages */
+  .hero-strip dt{font-size:.68rem}
+  .spec h4{font-size:.74rem}
+  .spec dt{font-size:.7rem}
+  .spec dl>div{font-size:.8rem}
+  .science>summary{font-size:.82rem}
+  .gc-table th{font-size:.66rem}
+  .gc-table .cls{font-size:.76rem}
+  .plate .fig{font-size:.7rem}
+  .refs li::before{font-size:.7rem}
+  .mono-cta .back{font-size:.8rem;display:inline-block;padding:.4rem 0}
+
+  /* documents, contact, legal */
+  .doc .meta{font-size:.74rem}
+  .doc h2 .n{font-size:.7rem}
+  .doc h3{font-size:.8rem}
+  .doc p,.doc li{font-size:1.05rem}
+  .doc dl.facts dt{font-size:.74rem}
+  .doc dl.facts dd{font-size:1.02rem}
+  .doc-nav a{font-size:.76rem;padding:.62rem 1.1rem}
+  .callout .h,.callout h4{font-size:.72rem}
+  .fld label{font-size:.76rem}
+  .fld input,.fld textarea{font-size:1.05rem;padding:.95rem 1rem}
+  .aside h3{font-size:.74rem}
+  .aside ol li,.aside p{font-size:1.02rem}
+  .aside ol li::before{font-size:.68rem}
+  .consent{font-size:.98rem}
+  .consent input{width:1.25rem;height:1.25rem}
+}
+
 </style>
 </head>
 <body id="top">
