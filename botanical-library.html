@@ -184,6 +184,16 @@ footer{background:var(--forest-deep);color:var(--cream);padding:clamp(3.5rem,7vw
 @media (max-width:640px){
   body{font-size:1.05rem;line-height:1.66}
   .burger{width:44px;height:44px;display:flex;align-items:center;justify-content:center;margin-right:-.4rem}
+
+  /* The film grain is a full-screen fixed layer in multiply blend mode.
+     On a phone that forces the whole page through a composited blend on
+     every frame for a texture nobody can see at this size. Drop it. */
+  body::after{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  .marquee-track{animation:none}
+  .rv{transition:none!important;opacity:1!important;transform:none!important}
+  html{scroll-behavior:auto}
   /* breadcrumbs, form labels and pill links - size and hit area */
   .crumbs{font-size:.78rem}
   .crumbs a{display:inline-block;padding:.34rem 0}
