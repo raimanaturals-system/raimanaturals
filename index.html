@@ -126,8 +126,10 @@ background-image:
 @media (max-width:820px){
   /* On a narrow screen the type spans the full width, so the side-lit
      scrim makes no sense - darken downward instead and let the top of
-     the photograph breathe. */
-  header.hero{--hero-pos:60%;background-attachment:scroll}
+     the photograph breathe. The padding reserves room for the fixed
+     nav: on a short phone the hero content is taller than the screen,
+     and bottom-aligned content would otherwise ride up underneath it. */
+  header.hero{--hero-pos:60%;background-attachment:scroll;padding-top:5.75rem}
   header.hero::before{background-image:
     linear-gradient(180deg, rgba(12,8,5,.30) 0%, rgba(12,8,5,.16) 30%, rgba(12,8,5,.58) 66%, rgba(12,8,5,.88) 100%)}
 }
@@ -198,11 +200,7 @@ background-image:
 @media (max-width:820px){.gond-cols{grid-template-columns:1fr}.facets{grid-template-columns:1fr}}
 
 /* ---------- quote band ---------- */
-.band{position:relative;min-height:56vh;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--cream);
-background-color:var(--forest-deep);
-background-image:linear-gradient(rgba(10,22,15,.62),rgba(10,22,15,.62)),var(--hero-photo);
-background-size:cover;background-position:center 30%;background-attachment:fixed;padding:clamp(4rem,9vw,7rem) 1.5rem}
-@media (max-width:900px){.band{background-attachment:scroll}}
+.band{position:relative;min-height:52vh;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--cream);background:var(--forest-deep);padding:clamp(4rem,9vw,7rem) 1.5rem}
 .band blockquote{font-family:var(--serif);font-weight:320;font-style:italic;font-size:clamp(1.7rem,4.4vw,3.1rem);line-height:1.25;max-width:22em;text-wrap:balance}
 .band .kicker{color:var(--chartreuse);display:block;margin-top:1.6rem}
 
